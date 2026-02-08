@@ -5,7 +5,7 @@
 ![Static Badge](https://img.shields.io/badge/HTML-HTML5+-1C2024?style=for-the-badge&logo=html5&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/css-css3+-1C2024?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
 
-![header_hello_typescript](https://github.com/user-attachments/assets/7b3d61c4-459b-4334-8774-4d806d57ecd5)
+![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
 ## Repository Content
 
