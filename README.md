@@ -44,7 +44,7 @@ console.log(greeting);
 
 - Maintain a reproducible workflow with clear documentation, disciplined commits, and accessible code samples that reflect best practices.
 
-- Use this repository as a stepping stone to transition from JavaScript into TypeScript, preparing for deeper work with Node.js, React, React Native, and Expo, with the long‑term goal of creating apps for iOS, Android and Web.
+- Use this repository as a stepping stone to transition from `JavaScript` into `TypeScript`, preparing for deeper work with `Node.js`, `React`, `React Native`, and `Expo`, aiming to create apps for `iOS`, `Android` and `Web`.
 
 ## License
 
