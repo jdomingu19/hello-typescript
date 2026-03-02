@@ -12,9 +12,10 @@
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
 ```typescript
-// Awesome TypeScript code
+// Define typed variable string
 let greeting: string = "Hello, TypeScript!";
 
+// Display variable value on console 
 console.log(greeting);
 ```
 > `[Run] Hello, TypeScript! 0.19 ms`
