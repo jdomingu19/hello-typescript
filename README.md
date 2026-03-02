@@ -11,6 +11,12 @@
 
 ## Repository Content
 
+### [`midudev/`](./midudev/)
+
+...
+
+### [`playground/`](./playground/)
+
 ...
 
 ## Repository Goals
