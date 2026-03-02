@@ -12,7 +12,7 @@
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
 ```typescript
-// Define typed variable string
+// Define typed string variable
 let greeting: string = "Hello, TypeScript!";
 
 // Display variable value on console 
