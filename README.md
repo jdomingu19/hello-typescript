@@ -11,7 +11,9 @@
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
-> `console.log("Hello, TypeScript!");`
+> `let greeting: string = "Hello, JavaScript!";`
+> `console.log(greeting);`
+> `[Run] Hello, JavaScript! 0.19 ms`
 
 ## Repository Content
 
