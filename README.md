@@ -17,6 +17,12 @@
 >
 > `[Run] Hello, TypeScript! 0.19 ms`
 
+```typescript
+let greeting: string = "Hello, TypeScript!";
+
+console.log(greeting);
+```
+
 ## Repository Content
 
 #### [`midudev/`](./midudev/)
