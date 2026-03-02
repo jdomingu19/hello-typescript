@@ -33,11 +33,11 @@
 
 ## Repository Goals
 
-- ...
+- Strengthen the foundation by practicing TypeScript syntax, typing rules, and core concepts through structured examples, challenges, and course exercises.
 
-- ...
+- Maintain a reproducible workflow with clear documentation, disciplined commits, and accessible code samples that reflect best practices.
 
-- ...
+- Use this repository as a stepping stone to transition from JavaScript into TypeScript, preparing for deeper work with Node.js, React, React Native, and Expo, with the long‑term goal of creating apps for iOS, Android and Web.
 
 ## License
 
