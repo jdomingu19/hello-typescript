@@ -7,15 +7,22 @@
 ![Static Badge](https://img.shields.io/badge/css-css3+-1C2024?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/bash-5.2.37+-1C2024?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
-**Welcome to hello-typescript!** This repository is my personal learning space for exploring TypeScript from scratch. Inside, you’ll find practice scripts, examples from intensive courses, and small programming challenges that showcase different aspects of the language.
+**Welcome to hello-typescript!** 👋🏻 This repository is my personal learning space for exploring TypeScript from scratch. Inside, you’ll find practice scripts, examples from intensive courses, and small programming challenges that showcase different aspects of the language.
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
-> `console.log("Hello, TypeScript!");`
+```typescript
+// Define typed string variable
+let greeting: string = "Hello, TypeScript!";
+
+// Display variable value on console 
+console.log(greeting);
+```
+> `[Run] Hello, TypeScript! 0.19 ms`
 
 ## Repository Content
 
-### [`midudev/`](./midudev/)
+#### [`midudev/`](./midudev/)
 
 - ...
 
@@ -23,7 +30,7 @@
 
 - ...
 
-### [`playground/`](./playground/)
+#### [`playground/`](./playground/)
 
 - ...
 
@@ -33,11 +40,11 @@
 
 ## Repository Goals
 
-- ...
+- Strengthen the foundation by practicing TypeScript syntax, typing rules, and core concepts through structured examples, challenges, and course exercises.
 
-- ...
+- Maintain a reproducible workflow with clear documentation, disciplined commits, and accessible code samples that reflect best practices.
 
-- ...
+- Use this repository as a stepping stone to transition from `JavaScript` into `TypeScript`, preparing for deeper work with `Node.js`, `React`, `React Native`, and `Expo`, aiming to create apps for `iOS`, `Android` and `Web`.
 
 ## License
 
