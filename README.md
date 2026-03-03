@@ -15,9 +15,15 @@
 // Define typed string variable
 let greeting: string = "Hello, TypeScript!";
 
-// Display variable value on console 
-console.log(greeting);
+// ?
+function showMessage(msg: string): void {
+  console.log(msg);
+}
+
+// ?
+showMessage(greeting);
 ```
+
 > `@Jesús hello-typescript/greeting.ts git(main)`
 >
 > `[Run] Hello, TypeScript! 0.19 ms`
