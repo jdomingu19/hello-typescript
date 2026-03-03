@@ -12,8 +12,6 @@
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
 ```typescript
-// greeting.ts
-
 // Define typed string variable
 let greeting: string = "Hello, TypeScript!";
 
@@ -51,8 +49,6 @@ showMessage(greeting);
 ## Repository Goals
 
 - Strengthen the foundation by practicing TypeScript syntax, typing rules, and core concepts through structured examples, challenges, and course exercises.
-
-- Maintain a reproducible workflow with clear documentation, disciplined commits, and accessible code samples that reflect best practices.
 
 - Use this repository as a stepping stone to transition from `JavaScript` into `TypeScript`, preparing for deeper work with `Node.js`, `React`, `React Native`, and `Expo`, aiming to create apps for `iOS`, `Android` and `Web`.
 
