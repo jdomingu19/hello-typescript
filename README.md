@@ -15,12 +15,12 @@
 // Define typed string variable
 let greeting: string = "Hello, TypeScript!";
 
-// ?
+// Typed function that log messages
 function showMessage(msg: string): void {
   console.log(msg);
 }
 
-// ?
+// Call typed function
 showMessage(greeting);
 ```
 
