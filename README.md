@@ -18,6 +18,8 @@ let greeting: string = "Hello, TypeScript!";
 // Display variable value on console 
 console.log(greeting);
 ```
+> `@Jesús hello-typescript/greeting.ts git(main)`
+>
 > `[Run] Hello, TypeScript! 0.19 ms`
 
 ## Repository Content
