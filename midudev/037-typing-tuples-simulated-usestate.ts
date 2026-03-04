@@ -1,6 +1,6 @@
 // Hello, TypeScript! @jdomingu19
 // Intensive Course by @midudev (2023)
-// 037 ?
+// 037 Simulating useState with Tuples
 
 // 1. Define tuple type for state
 type State = [string, (newName: string) => void];
