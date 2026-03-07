@@ -32,19 +32,13 @@ showMessage(greeting);
 
 #### [`midudev/`](./midudev/)
 
-- ...
+- **Core TypeScript Fundamentals:** introductory examples covering editor errors, typed functions, type inference, object and array typing, tuples, type aliases, optional and readonly properties, template literal types, union and intersection types, and type narrowing/assertion techniques.
 
-- ...
+- **API Integration and Advanced Typing:** practical examples using `fetch` with top-level `await`, error handling in API calls, explicit parameter typing, and strong typing of external responses with generated types from tools like quicktype.io.
 
-- ...
-
+- **Interfaces and Data Structures:** examples focused on defining and extending interfaces, implementing object methods, working with specialized and mixed shopping carts, applying union types, and building structured operations such as add, remove, and clear with different interface syntaxes and merging.
+  
 #### [`playground/`](./playground/)
-
-- ...
-
-- ...
-
-- ...
 
 ## Repository Goals
 
