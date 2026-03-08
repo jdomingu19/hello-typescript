@@ -9,6 +9,8 @@
 
 ## Welcome to hello-typescript!
 
+<h2 align="center">Welcome to hello-type-script!</h2>
+
 This repository is my personal learning space for exploring TypeScript from scratch. Inside, you’ll find practice scripts, examples from intensive courses, and small programming challenges that showcase different aspects of the language.
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
