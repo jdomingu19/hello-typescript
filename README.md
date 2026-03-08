@@ -7,8 +7,6 @@
 ![Static Badge](https://img.shields.io/badge/css-css3+-1C2024?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/bash-5.2.37+-1C2024?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
-## Welcome to hello-typescript!
-
 <h2 align="center">Welcome to hello-type-script!</h2>
 
 This repository is my personal learning space for exploring TypeScript from scratch. Inside, you’ll find practice scripts, examples from intensive courses, and small programming challenges that showcase different aspects of the language.
@@ -34,7 +32,7 @@ showMessage(greeting);
 >
 > `[Run] Hello, TypeScript! 0.19 ms`
 
-## Repository Content
+<h2 align="center">Repository Content</h2>
 
 #### [`midudev/`](./midudev/)
 
@@ -54,7 +52,7 @@ showMessage(greeting);
 
 - ...
 
-## Repository Goals
+<h2 align="center">Repository Goals</h2>
 
 - Strengthen the foundation by practicing TypeScript syntax, typing rules, and core concepts through structured examples, challenges, and course exercises.
 
