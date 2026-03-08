@@ -1,4 +1,4 @@
-# Hello, TypeScript!
+<h1 align="center">Hello, TypeScript!</h1>
 
 ![Static Badge](https://img.shields.io/badge/typescript-5+-1C2024?style=for-the-badge&logo=typescript&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/javascript-ES6+-1C2024?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)
@@ -58,7 +58,7 @@ showMessage(greeting);
 
 - Use this repository as a stepping stone to transition from `JavaScript` into `TypeScript`, preparing for deeper work with `Node.js`, `React`, `React Native`, and `Expo`, aiming to create apps for `iOS`, `Android` and `Web`.
 
-## License
+<h2 align="center">License</h2>
 
 This repository is licensed under the terms of the [Apache License 2.0](LICENSE)
 
