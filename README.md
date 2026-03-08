@@ -11,6 +11,8 @@
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
+> [TypeScript](https://www.typescriptlang.org/) is an open-source programming language developed and maintained by Microsoft. It builds on JavaScript by adding optional static typing, interfaces, and advanced tooling that help developers catch errors early and write more maintainable code. TypeScript compiles down to plain JavaScript, meaning it can run anywhere JavaScript runs, while providing a richer developer experience with features like type inference, autocompletion, and strong IDE support. It has become a popular choice for building scalable web applications and large codebases where clarity and reliability are essential.
+
 ```typescript
 // Define typed string variable
 let greeting: string = "Hello, TypeScript!";
