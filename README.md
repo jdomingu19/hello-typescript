@@ -1,4 +1,4 @@
-<h1 align="center">Hello, TypeScript!</h1>
+# Hello, TypeScript!
 
 
 <div align="center">
@@ -11,8 +11,6 @@
 ![Static Badge](https://img.shields.io/badge/bash-5.2.37+-1C2024?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
 </div>
-
-<h2 align="center">Welcome!</h2>
 
 This repository is my personal learning space for exploring TypeScript from scratch. Inside, you’ll find practice scripts, examples from intensive courses, and small programming challenges that showcase different aspects of the language.
 
@@ -37,33 +35,29 @@ showMessage(greeting);
 >
 > `[Run] Hello, TypeScript! 0.19 ms`
 
-<h2 align="center">Repository Content</h2>
+## Repository Content
 
 #### [`midudev/`](./midudev/)
 
-- **Core TypeScript Fundamentals:** introductory examples covering editor errors, typed functions, type inference, object and array typing, tuples, type aliases, optional and readonly properties, template literal types, union and intersection types, and type narrowing/assertion techniques.
+**Core TypeScript Fundamentals:** introductory examples covering editor errors, typed functions, type inference, object and array typing, tuples, type aliases, optional and readonly properties, template literal types, union and intersection types, and type narrowing/assertion techniques.
 
-- **API Integration and Advanced Typing:** practical examples using `fetch` with top-level `await`, error handling in API calls, explicit parameter typing, and strong typing of external responses with generated types from tools like quicktype.io.
+**API Integration and Advanced Typing:** practical examples using `fetch` with top-level `await`, error handling in API calls, explicit parameter typing, and strong typing of external responses with generated types from tools like quicktype.io.
 
-- **Interfaces and Data Structures:** examples focused on defining and extending interfaces, implementing object methods, working with specialized and mixed shopping carts, applying union types, and building structured operations such as add, remove, and clear with different interface syntaxes and merging.
+**Interfaces and Data Structures:** examples focused on defining and extending interfaces, implementing object methods, working with specialized and mixed shopping carts, applying union types, and building structured operations such as add, remove, and clear with different interface syntaxes and merging.
 
 > [MiduDev](https://github.com/midudev) is a Spanish software engineer, educator, and content creator who shares practical programming knowledge with a global developer community. He is well known for his live coding sessions, tutorials, and intensive courses that focus on modern web technologies such as JavaScript, TypeScript, React, and Node.js. Through his work, MiduDev has built a reputation for making complex concepts approachable, fostering open-source collaboration, and inspiring developers to grow their skills with hands-on examples and clear explanations.
   
 #### [`playground/`](./playground/)
 
-- ...
+...
 
-- ...
+## Repository Goals
 
-- ...
+Strengthen the foundation by practicing TypeScript syntax, typing rules, and core concepts through structured examples, challenges, and course exercises.
 
-<h2 align="center">Repository Goals</h2>
+Use this repository as a stepping stone to transition from `JavaScript` into `TypeScript`, preparing for deeper work with `Node.js`, `React`, `React Native`, and `Expo`, aiming to create apps for `iOS`, `Android` and `Web`.
 
-- Strengthen the foundation by practicing TypeScript syntax, typing rules, and core concepts through structured examples, challenges, and course exercises.
-
-- Use this repository as a stepping stone to transition from `JavaScript` into `TypeScript`, preparing for deeper work with `Node.js`, `React`, `React Native`, and `Expo`, aiming to create apps for `iOS`, `Android` and `Web`.
-
-<h2 align="center">License</h2>
+## License
 
 This repository is licensed under the terms of the [Apache License 2.0](LICENSE)
 
