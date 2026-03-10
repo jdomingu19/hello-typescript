@@ -48,9 +48,11 @@ showMessage(greeting);
 
 ## Repository Goals
 
-Strengthen the foundation by practicing TypeScript syntax, typing rules, and core concepts through structured examples, challenges, and course exercises.
+The primary goal of this repository is to strengthen my foundation in TypeScript by practicing syntax, typing rules, and core concepts through structured examples, challenges, and course exercises. Each script is designed to highlight a specific feature of the language, making the learning process incremental and reproducible.
 
-Use this repository as a stepping stone to transition from `JavaScript` into `TypeScript`, preparing for deeper work with `Node.js`, `React`, `React Native`, and `Expo`, aiming to create apps for `iOS`, `Android` and `Web`.
+Beyond fundamentals, this repository serves as a bridge for transitioning from JavaScript into TypeScript. By consolidating knowledge in typing, interfaces, and modular design, I am preparing for deeper work with Node.js, React, React Native, and Expo. This progression ensures that I can apply TypeScript effectively in both backend and frontend environments.
+
+Ultimately, the long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for iOS, Android, and the Web. By maintaining a disciplined workflow and consistent documentation, I aim to create a resource that not only supports my growth but also becomes a reference for others exploring TypeScript and modern web development. 
 
 ## License
 
