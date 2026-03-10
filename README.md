@@ -7,7 +7,11 @@
 ![Static Badge](https://img.shields.io/badge/css-css3+-1C2024?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/bash-5.2.37+-1C2024?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
-This repository is my personal learning space for exploring TypeScript from scratch. Inside, you’ll find practice scripts, examples from intensive courses, and small programming challenges that showcase different aspects of the language.
+This repository is my personal learning space for exploring TypeScript from scratch. It is designed not only as a collection of practice scripts and examples from intensive courses, but also as a structured journey through the language’s most important features. 
+
+Each exercise reflects a specific concept, from the basics of type annotations to advanced techniques like generics and type inference, allowing me to build confidence step by step. Alongside small programming challenges, you’ll also find experiments with API integration, Node.js, and Express, which demonstrate how TypeScript can be applied in real-world scenarios.
+
+Ultimately, this repository serves as both a sandbox for experimentation and a growing reference guide that documents my transition from JavaScript into TypeScript with clarity and discipline.
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
