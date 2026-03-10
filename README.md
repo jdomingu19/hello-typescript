@@ -15,9 +15,13 @@ Ultimately, this repository serves as both a sandbox for experimentation and a g
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
+## What is TypeScript
+
 > [TypeScript](https://www.typescriptlang.org/) is an open-source programming language developed and maintained by Microsoft. It builds on JavaScript by adding optional static typing, interfaces, and advanced tooling that help developers catch errors early and write more maintainable code. 
 
 > TypeScript compiles down to plain JavaScript, meaning it can run anywhere JavaScript runs, while providing a richer developer experience with features like type inference, autocompletion, and strong IDE support. It has become a popular choice for building scalable web applications and large codebases where clarity and reliability are essential.
+
+## TypeScript code example 
 
 ```typescript
 // Define typed string variable
@@ -35,6 +39,27 @@ showMessage(greeting);
 > `@Jesús hello-typescript/greeting.ts git(main)`
 >
 > `[Run] Hello, TypeScript! 0.19 ms`
+
+## TypeScript Technical Vocabulary
+
+- **Type Annotations** – explicitly specify the type of a variable or parameter.  
+- **Type Inference** – the compiler’s ability to automatically deduce types.  
+- **Interfaces** – contracts that define the shape of objects and classes.  
+- **Type Aliases** – custom names for complex or repetitive types.  
+- **Union Types** – combine multiple possible types for a single variable.  
+- **Intersection Types** – merge several types into one.  
+- **Literal Types** – specific values used as types (e.g., `"success" | "error"`).  
+- **Tuples** – arrays with a fixed length and defined types at each position.  
+- **Enums** – collections of named constant values.  
+- **Generics** – parameterized types that enable flexible and reusable code.  
+- **Optional Properties** – properties that may or may not exist in an object.  
+- **Readonly Properties** – properties that cannot be modified after initialization.  
+- **Type Narrowing** – refining types at runtime through conditional checks.  
+- **Type Assertions** – force the compiler to treat a value as a specific type.  
+- **Modules & Imports** – organize code into files and dependencies.  
+- **Decorators** – experimental annotations for classes and methods.  
+- **Ambient Declarations (.d.ts)** – files that describe types of external libraries.  
+- **Strict Mode** – a set of rules that enforce stronger safety and consistency in code.
 
 ## Repository Content
 
@@ -59,28 +84,6 @@ The primary goal of this repository is to strengthen my foundation in TypeScript
 Beyond fundamentals, this repository serves as a bridge for transitioning from JavaScript into TypeScript. By consolidating knowledge in typing, interfaces, and modular design, I am preparing for deeper work with Node.js, React, React Native, and Expo. This progression ensures that I can apply TypeScript effectively in both backend and frontend environments.
 
 Ultimately, the long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for iOS, Android, and the Web. By maintaining a disciplined workflow and consistent documentation, I aim to create a resource that not only supports my growth but also becomes a reference for others exploring TypeScript and modern web development. 
-
-## TypeScript Technical Vocabulary
-
-- **Type Annotations** – explicitly specify the type of a variable or parameter.  
-
-- **Type Inference** – the compiler’s ability to automatically deduce types.  
-- **Interfaces** – contracts that define the shape of objects and classes.  
-- **Type Aliases** – custom names for complex or repetitive types.  
-- **Union Types** – combine multiple possible types for a single variable.  
-- **Intersection Types** – merge several types into one.  
-- **Literal Types** – specific values used as types (e.g., `"success" | "error"`).  
-- **Tuples** – arrays with a fixed length and defined types at each position.  
-- **Enums** – collections of named constant values.  
-- **Generics** – parameterized types that enable flexible and reusable code.  
-- **Optional Properties** – properties that may or may not exist in an object.  
-- **Readonly Properties** – properties that cannot be modified after initialization.  
-- **Type Narrowing** – refining types at runtime through conditional checks.  
-- **Type Assertions** – force the compiler to treat a value as a specific type.  
-- **Modules & Imports** – organize code into files and dependencies.  
-- **Decorators** – experimental annotations for classes and methods.  
-- **Ambient Declarations (.d.ts)** – files that describe types of external libraries.  
-- **Strict Mode** – a set of rules that enforce stronger safety and consistency in code. 
 
 ## License
 
