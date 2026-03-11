@@ -15,7 +15,7 @@ Ultimately, this repository is both a sandbox for experimentation and a growing 
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
-## What is TypeScript
+## What's TypeScript
 
 > [TypeScript](https://www.typescriptlang.org/) is an open-source programming language developed and maintained by Microsoft. It builds on JavaScript by adding optional static typing, interfaces, and advanced tooling that help developers catch errors early and write more maintainable code. 
 
@@ -100,10 +100,6 @@ The primary goal of this repository is to strengthen my foundation in TypeScript
 This repository is a bridge for transitioning from JavaScript into TypeScript. By consolidating knowledge in typing, interfaces, and modular design, I am preparing for deeper work with Node.js, React, React Native, and Expo. This progression ensures that I can apply TypeScript effectively in both backend and frontend environments.  
 
 > The long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for **iOS**, **Android**, and the **Web**.
-
-## License
-
-This repository is licensed under the terms of the [Apache License 2.0](LICENSE)
 
 ## License
 
