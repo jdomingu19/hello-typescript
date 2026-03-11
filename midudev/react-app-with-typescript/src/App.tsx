@@ -6,17 +6,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import List from "./components/List";
-
-// . ?
-interface SubscriberInterface {
-  nick: string;
-  subscriptionMonths: number;
-  avatar: string;
-  description?: string;
-}
+import Form from "./components/Form";
+import { SubscriberInterface } from "./types";
 
 // . ?
 // Es aconsejable separar el estado del componente
+// Es aconsejable dejar los types del estado del componente en el mismo archivo
 interface AppState {
   subscribers: Array<SubscriberInterface>;
   newSubscribersNumber: number;
@@ -95,6 +90,7 @@ function App() {
     <div className="App">
       <h1>MiduDev's Twitch Subscribers</h1>
       <List subscribers={subscribers} />
+      <Form />
     </div>
   );
 }
