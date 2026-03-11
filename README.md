@@ -7,15 +7,15 @@
 ![Static Badge](https://img.shields.io/badge/css-css3+-1C2024?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/bash-5.2.37+-1C2024?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
-This repository is my personal learning space for exploring TypeScript from scratch. It is designed not only as a collection of practice scripts and examples from intensive courses, but also as a structured journey through the language’s most important features. 
+This repository is my personal learning space for exploring TypeScript from scratch. It is a collection of practice scripts and examples from intensive courses, and it also represents a structured journey through the language’s most important features.  
 
-Each exercise reflects a specific concept, from the basics of type annotations to advanced techniques like generics and type inference, allowing me to build confidence step by step. Alongside small programming challenges, you’ll also find experiments with API integration, Node.js, and Express, which demonstrate how TypeScript can be applied in real-world scenarios.
+Each exercise highlights a specific concept, from the basics of type annotations to advanced techniques like generics and type inference, building confidence step by step. Alongside small programming challenges, you will find experiments with API integration, Node.js, and Express, demonstrating how TypeScript applies in real-world scenarios.  
 
-Ultimately, this repository serves as both a sandbox for experimentation and a growing reference guide that documents my transition from JavaScript into TypeScript with clarity and discipline.
+Ultimately, this repository is both a sandbox for experimentation and a growing reference guide that documents my transition from JavaScript into TypeScript with clarity and discipline.
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
-## What is TypeScript
+## What's TypeScript
 
 > [TypeScript](https://www.typescriptlang.org/) is an open-source programming language developed and maintained by Microsoft. It builds on JavaScript by adding optional static typing, interfaces, and advanced tooling that help developers catch errors early and write more maintainable code. 
 
@@ -24,21 +24,37 @@ Ultimately, this repository serves as both a sandbox for experimentation and a g
 ## TypeScript code example 
 
 ```typescript
-// Define typed string variable
-let greeting: string = "Hello, TypeScript!";
-
-// Typed function that log messages
-function showMessage(msg: string): void {
-  console.log(msg);
+// Define interface for a message
+interface Message {
+  id: number
+  text: string
+  author: string
+  timestamp: Date
 }
 
-// Call typed function
-showMessage(greeting);
+// Define type for a logger function
+type Logger = (msg: Message) => void
+
+// Implement typed logger function
+const showMessage: Logger = (msg) => {
+  console.log(`[${msg.timestamp.toISOString()}] ${msg.author}: ${msg.text}`)
+}
+
+// Create a strongly typed message object
+const greeting: Message = {
+  id: 1,
+  text: "Hello, TypeScript!",
+  author: "Jesús",
+  timestamp: new Date()
+}
+
+// Call typed function with typed object
+showMessage(greeting)
 ```
 
 > `@Jesús hello-typescript/greeting.ts git(main)`
 >
-> `[Run] Hello, TypeScript! 0.19 ms`
+> `[2026-03-11T14:47:00.123Z] Jesús: Hello, TypeScript! 0.19 ms`
 
 ## TypeScript Technical Vocabulary
 
@@ -63,7 +79,7 @@ showMessage(greeting);
 
 ## Repository Content
 
-#### [`midudev/`](./midudev/)
+### → [`midudev/`](./midudev/)
 
 **Core TypeScript Fundamentals:** introductory examples covering editor errors, typed functions, type inference, object and array typing, tuples, type aliases, optional and readonly properties, template literal types, union and intersection types, and type narrowing/assertion techniques.
 
@@ -73,20 +89,20 @@ showMessage(greeting);
 
 > [MiduDev](https://github.com/midudev) is a Spanish software engineer, educator, and content creator who shares practical programming knowledge with a global developer community. He is well known for his live coding sessions, tutorials, and intensive courses that focus on modern web technologies such as JavaScript, TypeScript, React, and Node.js. Through his work, MiduDev has built a reputation for making complex concepts approachable, fostering open-source collaboration, and inspiring developers to grow their skills with hands-on examples and clear explanations.
   
-#### [`playground/`](./playground/)
+### → [`playground/`](./playground/)
 
-...
+The Playground section is a dedicated space for **experimentation**, **exploration**, and **discovery** within TypeScript. Each script captures patterns, curiosities, and language behaviors that emerge as I study, while also reflecting questions and insights gained from learning with others. By transforming these ideas into practical examples, I extend both my knowledge and my skills, creating a growing catalog of scenarios that demonstrate how TypeScript works in real contexts. This approach ensures that every exercise contributes to a deeper understanding of the language and strengthens my ability to apply it with clarity and precision.
 
 ## Repository Goals
 
-The primary goal of this repository is to strengthen my foundation in TypeScript by practicing syntax, typing rules, and core concepts through structured examples, challenges, and course exercises. Each script is designed to highlight a specific feature of the language, making the learning process incremental and reproducible.
+The primary goal of this repository is to strengthen my foundation in TypeScript by practicing syntax, typing rules, and core concepts through structured examples, challenges, and course exercises. Each script highlights a specific feature of the language, making the learning process incremental and reproducible.  
 
-Beyond fundamentals, this repository serves as a bridge for transitioning from JavaScript into TypeScript. By consolidating knowledge in typing, interfaces, and modular design, I am preparing for deeper work with Node.js, React, React Native, and Expo. This progression ensures that I can apply TypeScript effectively in both backend and frontend environments.
+This repository is a bridge for transitioning from JavaScript into TypeScript. By consolidating knowledge in typing, interfaces, and modular design, I am preparing for deeper work with Node.js, React, React Native, and Expo. This progression ensures that I can apply TypeScript effectively in both backend and frontend environments.  
 
-Ultimately, the long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for iOS, Android, and the Web. By maintaining a disciplined workflow and consistent documentation, I aim to create a resource that not only supports my growth but also becomes a reference for others exploring TypeScript and modern web development. 
+> The long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for **iOS**, **Android**, and the **Web**.
 
 ## License
 
-This repository is licensed under the terms of the [Apache License 2.0](LICENSE)
+This repository is licensed under the terms of the [Apache License 2.0](LICENSE). The license grants permission to use, modify, and distribute the code with proper attribution, while ensuring that improvements and extensions remain open and accessible to the community.
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
