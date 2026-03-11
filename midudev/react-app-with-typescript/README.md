@@ -49,12 +49,14 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ```bash
 npx create-react-app react-app-with-typescript --template typescript
-
 ```
 
 ```bash
-npx ?
+npm run build
+```
 
+```bash
+npm start
 ```
 
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)

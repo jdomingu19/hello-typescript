@@ -3,8 +3,39 @@
 // src/App.tsx
 
 // . ?
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
+import List from "./components/List";
+
+// . ?
+interface SubscriberInterface {
+  nick: string;
+  subscriptionMonths: number;
+  avatar: string;
+  description?: string;
+}
+
+// . ?
+// Es aconsejable separar el estado del componente
+interface AppState {
+  subscribers: Array<SubscriberInterface>;
+  newSubscribersNumber: number;
+}
+
+// . ?
+const INITIAL_STATE = [
+  {
+    nick: "john",
+    subscriptionMonths: 3,
+    avatar: "https://i.pravatar.cc/150?u=john",
+    description: "John is a channel moderator",
+  },
+  {
+    nick: "robin",
+    subscriptionMonths: 7,
+    avatar: "https://i.pravatar.cc/150?u=robin",
+  },
+];
 
 // . ?
 function App() {
@@ -20,17 +51,52 @@ function App() {
   //   setNumber("2");
   // };
 
-  // . ?
-  const [subscribers, setSubscribers] = useState([
-    {
-      nick: "john",
-      subscriptionMonths: 3,
-      avatar: "https://i.pravatar.cc/150?u=john",
-    },
-  ]);
+  // . ? (un estado inicial)
+  // const [subscribers, setSubscribers] = useState([
+  //   {
+  //     nick: "john",
+  //     subscriptionMonths: 3,
+  //     avatar: "https://i.pravatar.cc/150?u=john",
+  //     description: "John is a channel moderator",
+  //   },
+  //   {
+  //     nick: "robin",
+  //     subscriptionMonths: 7,
+  //     avatar: "https://i.pravatar.cc/150?u=robin",
+  //   },
+  // ]);
 
   // . ?
-  return <div className="App"></div>;
+  // Error: ?
+  // subscribers.toLowerCase()
+
+  // . ?
+  // const [subscribers, setSubscribers] = useState<Array<SubscriberInterface>>(
+  //   [],
+  // );
+
+  // . ?
+  // const [subscribers, setSubscribers] = useState<SubscriberInterface[]>([]);
+
+  // . ?
+  const [subscribers, setSubscribers] = useState<AppState["subscribers"]>([]);
+
+  // . ?
+  const [newSubscribersNumber, setNewSubscribersNumber] =
+    useState<AppState["newSubscribersNumber"]>(0);
+
+  // . ?
+  useEffect(() => {
+    setSubscribers(INITIAL_STATE);
+  }, []);
+
+  // . ?
+  return (
+    <div className="App">
+      <h1>MiduDev's Twitch Subscribers</h1>
+      <List subscribers={subscribers} />
+    </div>
+  );
 }
 
 // . ?
