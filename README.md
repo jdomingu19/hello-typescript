@@ -105,4 +105,10 @@ This repository is a bridge for transitioning from JavaScript into TypeScript. B
 
 This repository is licensed under the terms of the [Apache License 2.0](LICENSE)
 
+## License
+
+This repository is licensed under the terms of the [Apache License 2.0](LICENSE).The license grants permission to use, modify, and distribute the code with proper attribution, while ensuring that improvements and extensions remain open and accessible to the community.  
+
+By adopting Apache 2.0, this project encourages collaboration, transparency, and reproducibility.
+
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
