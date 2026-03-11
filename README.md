@@ -83,7 +83,7 @@ The primary goal of this repository is to strengthen my foundation in TypeScript
 
 This repository is a bridge for transitioning from JavaScript into TypeScript. By consolidating knowledge in typing, interfaces, and modular design, I am preparing for deeper work with Node.js, React, React Native, and Expo. This progression ensures that I can apply TypeScript effectively in both backend and frontend environments.  
 
-> The long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for iOS, Android, and the Web.
+> The long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for **iOS**, **Android**, and the **Web**.
 
 ## License
 
