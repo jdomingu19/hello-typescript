@@ -63,7 +63,7 @@ showMessage(greeting);
 
 ## Repository Content
 
-#### → [`midudev/`](./midudev/)
+### → [`midudev/`](./midudev/)
 
 **Core TypeScript Fundamentals:** introductory examples covering editor errors, typed functions, type inference, object and array typing, tuples, type aliases, optional and readonly properties, template literal types, union and intersection types, and type narrowing/assertion techniques.
 
@@ -73,9 +73,9 @@ showMessage(greeting);
 
 > [MiduDev](https://github.com/midudev) is a Spanish software engineer, educator, and content creator who shares practical programming knowledge with a global developer community. He is well known for his live coding sessions, tutorials, and intensive courses that focus on modern web technologies such as JavaScript, TypeScript, React, and Node.js. Through his work, MiduDev has built a reputation for making complex concepts approachable, fostering open-source collaboration, and inspiring developers to grow their skills with hands-on examples and clear explanations.
   
-#### → [`playground/`](./playground/)
+### → [`playground/`](./playground/)
 
-The Playground section is a dedicated space for experimentation, exploration, and discovery within TypeScript. Each script captures patterns, curiosities, and language behaviors that emerge as I study, while also reflecting questions and insights gained from learning with others. By transforming these ideas into practical examples, I extend both my knowledge and my skills, creating a growing catalog of scenarios that demonstrate how TypeScript works in real contexts. This approach ensures that every exercise contributes to a deeper understanding of the language and strengthens my ability to apply it with clarity and precision.
+The Playground section is a dedicated space for **experimentation**, **exploration**, and **discovery** within TypeScript. Each script captures patterns, curiosities, and language behaviors that emerge as I study, while also reflecting questions and insights gained from learning with others. By transforming these ideas into practical examples, I extend both my knowledge and my skills, creating a growing catalog of scenarios that demonstrate how TypeScript works in real contexts. This approach ensures that every exercise contributes to a deeper understanding of the language and strengthens my ability to apply it with clarity and precision.
 
 ## Repository Goals
 
