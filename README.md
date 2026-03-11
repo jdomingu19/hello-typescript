@@ -24,21 +24,37 @@ Ultimately, this repository is both a sandbox for experimentation and a growing 
 ## TypeScript code example 
 
 ```typescript
-// Define typed string variable
-let greeting: string = "Hello, TypeScript!";
-
-// Typed function that log messages
-function showMessage(msg: string): void {
-  console.log(msg);
+// Define interface for a message
+interface Message {
+  id: number
+  text: string
+  author: string
+  timestamp: Date
 }
 
-// Call typed function
-showMessage(greeting);
+// Define type for a logger function
+type Logger = (msg: Message) => void
+
+// Implement typed logger function
+const showMessage: Logger = (msg) => {
+  console.log(`[${msg.timestamp.toISOString()}] ${msg.author}: ${msg.text}`)
+}
+
+// Create a strongly typed message object
+const greeting: Message = {
+  id: 1,
+  text: "Hello, TypeScript!",
+  author: "Jesús",
+  timestamp: new Date()
+}
+
+// Call typed function with typed object
+showMessage(greeting)
 ```
 
 > `@Jesús hello-typescript/greeting.ts git(main)`
 >
-> `[Run] Hello, TypeScript! 0.19 ms`
+> `[2026-03-11T14:47:00.123Z] Jesús: Hello, TypeScript! 0.19 ms`
 
 ## TypeScript Technical Vocabulary
 
