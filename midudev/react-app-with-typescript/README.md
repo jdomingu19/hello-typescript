@@ -59,4 +59,8 @@ npm run build
 npm start
 ```
 
+```bash
+npm install axios -E
+```
+
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
