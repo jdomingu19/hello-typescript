@@ -1,6 +1,6 @@
 // Hello, TypeScript! @jdomingu19
 // React & TypeScript App by @midudev (2022)
-// src/Components/List.tsx
+// src/components/List.tsx
 
 import { JSX } from "react";
 import { SubscriberInterface } from "../types";

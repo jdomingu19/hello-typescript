@@ -3,7 +3,7 @@
 // src/App.tsx
 
 // . ?
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import List from "./components/List";
 import Form from "./components/Form";
@@ -18,19 +18,6 @@ interface AppState {
 }
 
 // . ?
-const INITIAL_STATE = [
-  {
-    nick: "john",
-    subscriptionMonths: 3,
-    avatar: "https://i.pravatar.cc/150?u=john",
-    description: "John is a channel moderator",
-  },
-  {
-    nick: "robin",
-    subscriptionMonths: 7,
-    avatar: "https://i.pravatar.cc/150?u=robin",
-  },
-];
 
 // . ?
 function App() {
@@ -81,16 +68,33 @@ function App() {
     useState<AppState["newSubscribersNumber"]>(0);
 
   // . ?
+  const divRef = useRef<HTMLDivElement>(null);
+
+  // . ?
   useEffect(() => {
-    setSubscribers(INITIAL_STATE);
+    fetch("http://localhost:3001/subs") // MiduDev's Twitch Subscribers API
+      .then((res) => res.json())
+      .then((subscribers) => {
+        console.log(subscribers);
+        setSubscribers(subscribers);
+      });
   }, []);
 
   // . ?
+  const handleNewSubscriber = (newSubscriber: SubscriberInterface): void => {
+    setSubscribers((subscribers) => [...subscribers, newSubscriber]);
+    setNewSubscribersNumber((subscribersNumber) => subscribersNumber + 1);
+  };
+
+  // . ?
   return (
-    <div className="App">
+    <div className="App" ref={divRef}>
       <h1>MiduDev's Twitch Subscribers</h1>
       <List subscribers={subscribers} />
-      <Form />
+      New Subscribers : {newSubscribersNumber}
+      <Form onNewSubscriber={handleNewSubscriber} />
+      {/* . ? */}
+      {/* <Form onNewSubscriber={setSubscribers} /> */}
     </div>
   );
 }

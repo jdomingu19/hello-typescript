@@ -1,41 +1,65 @@
 // Hello, TypeScript! @jdomingu19
 // React & TypeScript App by @midudev (2022)
-// src/Components/Form.tsx
+// src/components/Form.tsx
 
 // . ?
-import { useState } from "react";
 import { SubscriberInterface } from "../types";
-
-// . ?
-interface FormStateInterface {
-  inputValues: SubscriberInterface;
-}
+import useNewSubscriberForm from "../hooks/useNewSubscriberForm";
 
 // . ?
 interface FormPropsInterface {
-  onNewSubscriber: () => {};
+  // onNewSubscriber: React.Dispatch<React.SetStateAction<SubscriberInterface[]>>;
+  onNewSubscriber: (newSubscriber: SubscriberInterface) => void;
 }
 
 // . ?
 const Form = ({ onNewSubscriber }: FormPropsInterface) => {
   // . ?
-  const [inputValues, setInputValues] = useState<
-    FormStateInterface["inputValues"]
-  >({
-    nick: "",
-    subscriptionMonths: 0,
-    avatar: "",
-    description: "",
-  });
+  // const [inputValues, setInputValues] =
+  //   useState<FormStateInterface["inputValues"]>(INITIAL_STATE);
 
   // . ?
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {};
+  // Error:  Tuple type '[SubscriberInterface, ActionDispatch<[action: FormReducerActionType]>]' of length '2' has no element at index '2'.
+  // const [inputValues, dispatch, abc] = useNewSubscriberForm();
+
+  // . ?
+  const [inputValues, dispatch] = useNewSubscriberForm();
+
+  // . ?
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    onNewSubscriber(inputValues);
+    handleClear();
+    // dispatch({
+    //   type: "clear",
+    // });
+  };
 
   // . ?
   const handleChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
-    setInputValues({ ...inputValues, [event.target.name]: event.target.value });
+    const { name, value } = event.target;
+
+    dispatch({
+      // . ?
+      // Error: Type '"abc"' is not assignable to type '"change_value" | "clear"'.
+      // type: "abc",
+      type: "change_value",
+      payload: {
+        inputName: name,
+        inputValue: value,
+      },
+    });
+    // setInputValues({ ...inputValues, [event.target.name]: event.target.value });
+  };
+
+  // . ?
+  const handleClear = () => {
+    dispatch({
+      type: "clear",
+    });
+    // setInputValues(INITIAL_STATE);
   };
 
   // . ?
@@ -82,7 +106,10 @@ const Form = ({ onNewSubscriber }: FormPropsInterface) => {
           name="description"
           placeholder="description"
         />
-        <button>Save new sub!</button>
+        <button onClick={handleClear} type="button">
+          Clear the Form
+        </button>
+        <button type="submit">Save New Subscriber!</button>
       </form>
     </div>
   );
