@@ -20,13 +20,13 @@ tsc app.ts
 tsc --init
 ```
 
-abc abc, transpila todos los .ts a .js, en lugar de hacerlo uno por uno e.g. tsc app.ts,
+**Compile all TypeScript files in the project** – Transpiles every `.ts` file defined in the project into `.js` files at once, instead of compiling them individually (e.g., `tsc app.ts`).
 
 ```bash
 tsc
 ```
 
-modo observador abc abc abc:
+**Enable watch mode for automatic recompilation** – Continuously monitors `.ts` files for changes and recompiles them into `.js` automatically whenever modifications are detected.
 
 ```bash
 tsc --watch
