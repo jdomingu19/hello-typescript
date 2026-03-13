@@ -20,4 +20,20 @@ tsc app.ts
 tsc --init
 ```
 
+abc abc, transpila todos los .ts a .js, en lugar de hacerlo uno por uno e.g. tsc app.ts,
+
+```bash
+tsc
+```
+
+modo observador abc abc abc:
+
+```bash
+tsc --watch
+```
+
+```bash
+tsc -w
+```
+
 > Made with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
