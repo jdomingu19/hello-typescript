@@ -1,5 +1,5 @@
 // Hello, TypeScript! @jdomingu19
-// Playground: TypeScript Declaration Diles (.d.ts)
+// Playground 002: TypeScript Declaration Diles (.d.ts)
 
 // 1. Define an external type
 export type HeroType = {

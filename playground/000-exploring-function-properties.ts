@@ -1,5 +1,5 @@
 // Hello, TypeScript! @jdomingu19
-// Playground: Exploring function properties
+// Playground 000: Exploring function properties
 
 // 1. Define function with parameter and return type
 function greetUser(name: string): string {

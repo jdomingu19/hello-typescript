@@ -1,5 +1,5 @@
 // Hello, TypeScript! @jdomingu19
-// Playground: Typing Object With Readonly And Object.freeze()
+// Playground 001: Typing Object With Readonly And Object.freeze()
 
 // 1. Define type alias with readonly properties
 type Hero = {
