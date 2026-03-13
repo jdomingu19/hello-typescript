@@ -57,7 +57,7 @@ showMessage(greeting)
 >
 > `[2026-03-11T14:47:00.123Z] Jesús: Hello, TypeScript! 0.19 ms`
 
-## 📘 TypeScript Technical Vocabulary
+## TypeScript Technical Vocabulary
 
 | #  | Concept                | Definition                                                                 |
 |----|------------------------|----------------------------------------------------------------------------|
