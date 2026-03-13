@@ -90,7 +90,11 @@ showMessage(greeting)
 
 **Interfaces and Data Structures:** examples focused on defining and extending interfaces, implementing object methods, working with specialized and mixed shopping carts, applying union types, and building structured operations such as add, remove, and clear with different interface syntaxes and merging.
 
-> [MiduDev](https://github.com/midudev) is a Spanish software engineer, educator, and content creator who shares practical programming knowledge with a global developer community. He is well known for his live coding sessions, tutorials, and intensive courses that focus on modern web technologies such as JavaScript, TypeScript, React, and Node.js. Through his work, MiduDev has built a reputation for making complex concepts approachable, fostering open-source collaboration, and inspiring developers to grow their skills with hands-on examples and clear explanations.
+> [MiduDev](https://github.com/midudev) is a Spanish software engineer, educator, and content creator who shares practical programming knowledge with a global developer community. 
+>
+> He is well known for his live coding sessions, tutorials, and intensive courses that focus on modern web technologies such as JavaScript, TypeScript, React, and Node.js.
+>
+> Through his work, MiduDev has built a reputation for making complex concepts approachable, fostering open-source collaboration, and inspiring developers to grow their skills with hands-on examples and clear explanations.
   
 ### → [`playground/`](./playground/)
 
