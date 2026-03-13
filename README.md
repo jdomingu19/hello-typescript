@@ -94,7 +94,9 @@ showMessage(greeting)
   
 ### → [`playground/`](./playground/)
 
-The Playground section is a dedicated space for **experimentation**, **exploration**, and **discovery** within TypeScript. Each script captures patterns, curiosities, and language behaviors that emerge as I study, while also reflecting questions and insights gained from learning with others. By transforming these ideas into practical examples, I extend both my knowledge and my skills, creating a growing catalog of scenarios that demonstrate how TypeScript works in real contexts. This approach ensures that every exercise contributes to a deeper understanding of the language and strengthens my ability to apply it with clarity and precision.
+The Playground section is a dedicated space for **experimentation**, **exploration**, and **discovery** within TypeScript. Each script captures patterns, curiosities, and language behaviors that emerge as I study, while also reflecting questions and insights gained from learning with others. 
+
+By transforming these ideas into practical examples, I extend both my knowledge and my skills, creating a growing catalog of scenarios that demonstrate how TypeScript works in real contexts. This approach ensures that every exercise contributes to a deeper understanding of the language and strengthens my ability to apply it with clarity and precision.
 
 ## Repository Goals
 
