@@ -7,7 +7,7 @@
 // - Creates a local scope that isolates code execution
 // - Commonly used to initialize logic immediately without polluting the global scope
 (function () {
-    // --- Class 27: Basic Functions ---
+    // --- Class 28: Basic Functions ---
     // 1. Named function returning a string
     // - Declared with function keyword
     // On editor hover => (local function) getHeroName1(): string
