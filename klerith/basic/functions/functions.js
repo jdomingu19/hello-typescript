@@ -10,7 +10,7 @@
     // --- Class 28: Basic Functions ---
     // 1. Named function returning a string
     // - Declared with function keyword
-    // On editor hover => (local function) getHeroName1(): string
+    // - On editor hover => (local function) getHeroName1(): string
     var hero = "Link";
     function getHeroName1() {
         return hero;
