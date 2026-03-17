@@ -30,8 +30,8 @@
         name = toUpperCase ? name.toUpperCase() : name;
         return name;
     };
-    console.log(fullName); //
-    console.log(typeof fullName); //
+    console.log(fullName); // [Function: fullName]
+    console.log(typeof fullName); // function
     // Call with only firstName
     var username1 = fullName("Jesús");
     console.log(username1); // Jesús

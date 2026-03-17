@@ -37,8 +37,8 @@
     return name;
   };
 
-  console.log(fullName); //
-  console.log(typeof fullName); //
+  console.log(fullName); // [Function: fullName]
+  console.log(typeof fullName); // function
 
   // Call with only firstName
   const username1 = fullName("Jesús");
