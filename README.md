@@ -59,8 +59,7 @@ showMessage(greeting);
 
 ## TypeScript Technical Vocabulary
 
-| # | Concept | Definition |
-| | | | |
+| # | Concept | Definition | | | | | |
 | 1 | **Type Annotations** | Explicitly specify the type of a variable or parameter. |
 | 2 | **Type Inference** | Compiler’s ability to automatically deduce types. |
 | 3 | **Interfaces** | Contracts that define the shape of objects and classes. |
