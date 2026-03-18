@@ -59,26 +59,26 @@ showMessage(greeting);
 
 ## TypeScript Technical Vocabulary
 
-| #   | Concept                          | Definition                                                   |
-| --- | -------------------------------- | ------------------------------------------------------------ | ---------- |
-| 1   | **Type Annotations**             | Explicitly specify the type of a variable or parameter.      |
-| 2   | **Type Inference**               | Compiler’s ability to automatically deduce types.            |
-| 3   | **Interfaces**                   | Contracts that define the shape of objects and classes.      |
-| 4   | **Type Aliases**                 | Custom names for complex or repetitive types.                |
-| 5   | **Union Types**                  | Combine multiple possible types for a single variable.       |
-| 6   | **Intersection Types**           | Merge several types into one.                                |
-| 7   | **Literal Types**                | Specific values used as types (e.g., `"success"              | "error"`). |
-| 8   | **Tuples**                       | Arrays with fixed length and defined types at each position. |
-| 9   | **Enums**                        | Collections of named constant values.                        |
-| 10  | **Generics**                     | Parameterized types that enable flexible and reusable code.  |
-| 11  | **Optional Properties**          | Properties that may or may not exist in an object.           |
-| 12  | **Readonly Properties**          | Properties that cannot be modified after initialization.     |
-| 13  | **Type Narrowing**               | Refine types at runtime through conditional checks.          |
-| 14  | **Type Assertions**              | Force the compiler to treat a value as a specific type.      |
-| 15  | **Modules & Imports**            | Organize code into files and dependencies.                   |
-| 16  | **Decorators**                   | Experimental annotations for classes and methods.            |
-| 17  | **Ambient Declarations (.d.ts)** | Files that describe types of external libraries.             |
-| 18  | **Strict Mode**                  | Rules that enforce stronger safety and consistency in code.  |
+| # | Concept | Definition |
+| | | | |
+| 1 | **Type Annotations** | Explicitly specify the type of a variable or parameter. |
+| 2 | **Type Inference** | Compiler’s ability to automatically deduce types. |
+| 3 | **Interfaces** | Contracts that define the shape of objects and classes. |
+| 4 | **Type Aliases** | Custom names for complex or repetitive types. |
+| 5 | **Union Types** | Combine multiple possible types for a single variable. |
+| 6 | **Intersection Types** | Merge several types into one. |
+| 7 | **Literal Types** | Specific values used as types (e.g., `"success"              | "error"`). |
+| 8 | **Tuples** | Arrays with fixed length and defined types at each position. |
+| 9 | **Enums** | Collections of named constant values. |
+| 10 | **Generics** | Parameterized types that enable flexible and reusable code. |
+| 11 | **Optional Properties** | Properties that may or may not exist in an object. |
+| 12 | **Readonly Properties** | Properties that cannot be modified after initialization. |
+| 13 | **Type Narrowing** | Refine types at runtime through conditional checks. |
+| 14 | **Type Assertions** | Force the compiler to treat a value as a specific type. |
+| 15 | **Modules & Imports** | Organize code into files and dependencies. |
+| 16 | **Decorators** | Experimental annotations for classes and methods. |
+| 17 | **Ambient Declarations (.d.ts)** | Files that describe types of external libraries. |
+| 18 | **Strict Mode** | Rules that enforce stronger safety and consistency in code. |
 
 ## Repository Content
 
