@@ -48,3 +48,4 @@
     console.log(typeof isHero); // boolean
     console.log(typeof link); // string
 })();
+//# sourceMappingURL=booleans.js.map

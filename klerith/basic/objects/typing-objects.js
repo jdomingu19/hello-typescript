@@ -78,3 +78,4 @@
     console.log(hero); // { name: 'Zelda', age: 19, isActive: true, powers: [ 'Wisdom' ] }
     console.log(typeof hero); // object
 })();
+//# sourceMappingURL=typing-objects.js.map

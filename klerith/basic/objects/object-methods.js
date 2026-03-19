@@ -77,3 +77,4 @@
     console.log(typeof hero); // object
     hero.greet(); // Hello, this is Zelda!
 })();
+//# sourceMappingURL=object-methods.js.map

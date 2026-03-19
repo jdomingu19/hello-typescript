@@ -91,3 +91,4 @@
     // Error: Type 'number' is not assignable to type 'BookType | DeveloperType'.
     // abc = 42;
 })();
+//# sourceMappingURL=app.js.map

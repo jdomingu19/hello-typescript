@@ -82,3 +82,4 @@
     console.log(zelda.greet); // [Function: greet]
     console.log(zelda.greet()); // Hello, this is Zelda!
 })();
+//# sourceMappingURL=type.js.map

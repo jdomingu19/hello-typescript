@@ -98,3 +98,4 @@
     var defaultMessage = "String '".concat(myName, "' is indexed from 0 to ").concat(myName.length - 1);
     console.log(((_b = myName[5]) === null || _b === void 0 ? void 0 : _b.toLocaleUpperCase()) || defaultMessage); // String 'Jesús' is indexed from 0 to 4
 })();
+//# sourceMappingURL=strings.js.map

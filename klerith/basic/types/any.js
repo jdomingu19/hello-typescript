@@ -57,3 +57,4 @@
     anyVariable = 123.456;
     console.log(anyVariable.toFixed(2)); // 123.46
 })();
+//# sourceMappingURL=any.js.map

@@ -45,3 +45,4 @@
     console.log(hero); // { name: 'Zelda', age: 19, isActive: true }
     console.log(typeof hero); // object
 })();
+//# sourceMappingURL=objects.js.map

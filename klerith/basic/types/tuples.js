@@ -46,3 +46,4 @@
     // Error: Type 'number' is not assignable to type 'boolean'.
     // tupleArray2[2] = 22;
 })();
+//# sourceMappingURL=tuples.js.map

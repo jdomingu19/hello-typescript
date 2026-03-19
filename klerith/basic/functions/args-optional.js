@@ -112,3 +112,4 @@
     console.log(addNumbers4(1, 2)); // NaN
     console.log(addNumbers4(1, 2, 3)); // 6
 })();
+//# sourceMappingURL=args-optional.js.map

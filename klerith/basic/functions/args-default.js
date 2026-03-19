@@ -49,3 +49,4 @@
     console.log(username4); // JESÚS DOMÍNGUEZ
     console.log(typeof username4); // string
 })();
+//# sourceMappingURL=args-default.js.map

@@ -46,7 +46,9 @@
     "module": "commonjs",
     "esModuleInterop": true,
     "noImplicitAny": true,
+    "strictNullChecks": false,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true
   }
 }

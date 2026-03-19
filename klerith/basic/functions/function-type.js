@@ -97,3 +97,4 @@
     c = showMessage;
     console.log(c()); // Hello, TypeScript!
 })();
+//# sourceMappingURL=function-type.js.map

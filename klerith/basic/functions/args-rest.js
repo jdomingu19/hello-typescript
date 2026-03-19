@@ -36,3 +36,4 @@
     console.log({ name4: name4 }); // { name4: 'Johann' }
     console.log(typeof name4); // string
 })();
+//# sourceMappingURL=args-rest.js.map

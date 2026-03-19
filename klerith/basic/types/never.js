@@ -82,3 +82,4 @@
     console.log(myFunction8("Something went wrong!")); // 1
     console.log(typeof myFunction8("Something went wrong!")); // number
 })();
+//# sourceMappingURL=never.js.map

@@ -28,3 +28,4 @@
     // Error: Expected 2 arguments, but got 1.
     // const userFullName2 = fullName("Domínguez");
 })();
+//# sourceMappingURL=args-required.js.map

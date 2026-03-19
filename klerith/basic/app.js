@@ -97,3 +97,4 @@
     // Error: Argument of type 'number' is not assignable to parameter of type 'string'.
     // sayHello(123);
 })();
+//# sourceMappingURL=app.js.map

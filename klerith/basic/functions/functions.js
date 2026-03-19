@@ -38,3 +38,4 @@
     console.log(heroName2); // Link
     console.log(typeof heroName2); // string
 })();
+//# sourceMappingURL=functions.js.map

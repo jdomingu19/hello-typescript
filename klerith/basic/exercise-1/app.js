@@ -66,3 +66,4 @@
     console.log({ powerLength: powerLength }); // { powerLength: 3 }
     console.log(typeof powerLength); // number
 })();
+//# sourceMappingURL=app.js.map

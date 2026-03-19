@@ -50,3 +50,4 @@
     console.log(myCustomVariable.greet); // [Function: greet]
     console.log(myCustomVariable.greet()); // Hello, this is Link!
 })();
+//# sourceMappingURL=union-types.js.map

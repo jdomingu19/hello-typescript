@@ -68,3 +68,4 @@
     console.log(typeof doesNothingEither); // function
     console.log(doesNothingEither(42, "abc", true, [])); // undefined
 })();
+//# sourceMappingURL=app.js.map

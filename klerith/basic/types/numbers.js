@@ -68,3 +68,4 @@
     console.log({ nanNumber: nanNumber }); // { nanNumber: NaN }
     console.log(typeof nanNumber); // number
 })();
+//# sourceMappingURL=numbers.js.map
