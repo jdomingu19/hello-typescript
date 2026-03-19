@@ -1,7 +1,7 @@
 "use strict";
 // Hello, TypeScript! @jdomingu19
 // Udemy Course by @klerith (2026)
-// objects/type.ts
+// objects/union-types.ts
 // Immediately Invoked Function Expression (IIFE)
 // - Helps avoid conflicts with variable, constant, and function names
 // - Creates a local scope that isolates code execution
