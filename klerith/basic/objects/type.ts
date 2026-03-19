@@ -88,7 +88,6 @@
   // 6. Valid reassignment with optional property
   // - On editor hover => let zelda: HeroType
   // - Adds powers array and keeps greet method
-  // - On editor hover => let zelda: HeroType
   zelda = {
     name: "Zelda",
     age: 19,
