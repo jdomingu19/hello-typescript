@@ -11,6 +11,34 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 (() => {
+    const heroesArray = [
+        "Link",
+        "Zelda",
+        "Mipha",
+        "Urbosa",
+        "Daruk",
+        "Revali",
+    ];
+    console.log(heroesArray);
+    console.log(typeof heroesArray);
+    const link1 = heroesArray[0];
+    const revali1 = heroesArray[5];
+    console.log(link1);
+    console.log(typeof link1);
+    console.log(revali1);
+    console.log(typeof revali1);
+    const [link2, , , , , revali2] = heroesArray;
+    console.log(link2);
+    console.log(typeof link2);
+    console.log(revali2);
+    console.log(typeof revali2);
+    const [link3, ...rest] = heroesArray;
+    console.log(link3);
+    console.log(typeof link3);
+    console.log(rest);
+    console.log(typeof rest);
+})();
+(() => {
 })();
 (() => {
     const hero = {
