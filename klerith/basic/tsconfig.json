@@ -51,5 +51,7 @@
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "removeComments": true
-  }
+  },
+  "exclude": ["excluded-folder"],
+  "include": ["included-folder"]
 }
