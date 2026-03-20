@@ -49,6 +49,7 @@
     "strictNullChecks": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "removeComments": true
   }
 }

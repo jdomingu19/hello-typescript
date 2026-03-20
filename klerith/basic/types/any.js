@@ -1,60 +1,28 @@
 "use strict";
-// Hello, TypeScript! @jdomingu19
-// Udemy Course by @klerith (2026)
-// types/any.ts
-// Immediately Invoked Function Expression (IIFE)
-// - Helps avoid conflicts with variable, constant, and function names
-// - Creates a local scope that isolates code execution
-// - Commonly used to initialize logic immediately without polluting the global scope
 (function () {
-    // --- Class 18: Any ---
-    // 1. Variable declared with type any
-    // - Can hold values of any type (string, number, boolean, null, etc.)
-    // - Disables type safety and allows reassignment freely
-    // - On editor hover => let anyVariable: any
     var anyVariable = "Hello, TypeScript!";
-    console.log({ anyVariable: anyVariable }); // { anyVariable: 'Hello, TypeScript!' }
-    console.log(typeof anyVariable); // string
+    console.log({ anyVariable: anyVariable });
+    console.log(typeof anyVariable);
     anyVariable = 42;
-    console.log({ anyVariable: anyVariable }); // { anyVariable: 42 }
-    console.log(typeof anyVariable); // number
+    console.log({ anyVariable: anyVariable });
+    console.log(typeof anyVariable);
     anyVariable = true;
-    console.log({ anyVariable: anyVariable }); // { anyVariable: true }
-    console.log(typeof anyVariable); // boolean
+    console.log({ anyVariable: anyVariable });
+    console.log(typeof anyVariable);
     anyVariable = null;
-    console.log({ anyVariable: anyVariable }); // { anyVariable: null }
-    console.log(typeof anyVariable); // object
-    // 2. Constant with type any must be initialized
-    // Error: 'anyConstant' is declared but its value is never read.
-    // Error: 'const' declarations must be initialized.
-    // const anyConstant: any;
-    // 3. Constant without type annotation defaults to implicit any
-    // Error: 'emptyConstant' is declared but its value is never read.
-    // Error: 'const' declarations must be initialized.
-    // Error: Variable 'emptyConstant' implicitly has an 'any' type.
-    // const emptyConstant;
-    // 4. Using type any disables IntelliSense
-    // - Editor does not provide method suggestions
-    // - Runtime errors occur if methods are misspelled or invalid
+    console.log({ anyVariable: anyVariable });
+    console.log(typeof anyVariable);
     anyVariable = "Some awesome text!";
-    console.log(anyVariable.charAt(0)); // S
-    // Runtime error: Uncaught TypeError: anyVariable.charat is not a function
-    // console.log(anyVariable.charat(0));
+    console.log(anyVariable.charAt(0));
     anyVariable = 123.456;
-    console.log(anyVariable.toFixed(2)); // 123.46
-    // Runtime error: Uncaught TypeError: anyVariable.charAt is not a function
-    // console.log(anyVariable.charAt(0));
-    // 5. Casting with 'as' provides type safety
-    // - Editor recognizes the type and suggests valid methods
+    console.log(anyVariable.toFixed(2));
     anyVariable = "Some awesome text!";
-    console.log(anyVariable.charAt(0)); // S
+    console.log(anyVariable.charAt(0));
     anyVariable = 123.456;
-    console.log(anyVariable.toFixed(2)); // 123.
-    // 6. Casting with angle brackets (<type>) provides type safety
-    // - Equivalent to 'as' syntax
+    console.log(anyVariable.toFixed(2));
     anyVariable = "Some awesome text!";
-    console.log(anyVariable.charAt(0)); // S
+    console.log(anyVariable.charAt(0));
     anyVariable = 123.456;
-    console.log(anyVariable.toFixed(2)); // 123.46
+    console.log(anyVariable.toFixed(2));
 })();
 //# sourceMappingURL=any.js.map
