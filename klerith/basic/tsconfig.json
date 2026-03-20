@@ -42,7 +42,7 @@
 
     // Klerith's course configuration
     "strict": true,
-    "target": "es5",
+    "target": "es6",
     "module": "amd",
     "esModuleInterop": true,
     "noImplicitAny": true,
@@ -53,6 +53,6 @@
     "removeComments": true,
     "outFile": "./main.js"
   },
-  "exclude": ["excluded-folder"]
-  // "include": ["included-folder"]
+  "exclude": ["excluded-folder"],
+  "include": ["es6"]
 }
