@@ -39,6 +39,33 @@ var __rest = (this && this.__rest) || function (s, e) {
     console.log(typeof rest);
 })();
 (() => {
+    const link = {
+        name: "Link",
+        alias: "Hero of Time",
+    };
+    const zelda = {
+        name: "Zelda",
+        alias: "Princess of Hyrule",
+    };
+    const revali = {
+        name: "Revali",
+        alias: "Rito Champion",
+    };
+    const heroesArray = [link, zelda, revali];
+    for (let i = 0; i < heroesArray.length; i++) {
+        console.log(heroesArray[i]);
+    }
+    for (let i = 0; i < heroesArray.length; i++) {
+        console.log(heroesArray[i].name);
+    }
+    for (const hero of heroesArray) {
+        console.log(hero);
+    }
+    for (const hero of heroesArray) {
+        console.log(hero.name);
+    }
+})();
+(() => {
 })();
 (() => {
     const hero = {
