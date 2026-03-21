@@ -54,5 +54,5 @@
     "outFile": "./main.js"
   },
   "exclude": ["excluded-folder"],
-  "include": ["es6"]
+  "include": ["classes"]
 }
