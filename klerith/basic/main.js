@@ -55,6 +55,29 @@
 })();
 (() => {
     class Hero {
+        constructor(name, age, isActive) {
+            this.name = name;
+            this.age = age;
+            this.isActive = isActive;
+        }
+        get getName() {
+            return `The name's ${this.name}!`;
+        }
+        set setName(name) {
+            this.name = name;
+        }
+    }
+    console.log(Hero);
+    console.log(typeof Hero);
+    const link = new Hero("abc", 21, true);
+    console.log(link);
+    console.log(typeof link);
+    console.log(link.getName);
+    console.log((link.setName = "Link"));
+    console.log(link.getName);
+})();
+(() => {
+    class Hero {
         static showPowers() {
             return this.name;
         }
