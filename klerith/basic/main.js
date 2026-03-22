@@ -19,6 +19,42 @@
 })();
 (() => {
     class Hero {
+        constructor(name, powers, isActive = true) {
+            this.name = name;
+            this.powers = powers;
+            this.isActive = isActive;
+            console.log("Hero constructor called!");
+        }
+        greet() {
+            return `Hello, this is ${this.name}!`;
+        }
+    }
+    class Link extends Hero {
+        constructor(name, powers, shields, swords) {
+            super(name, powers);
+            this.shields = shields;
+            this.swords = swords;
+            console.log("Link constructor called!");
+        }
+        greet() {
+            return super.greet();
+        }
+    }
+    console.log(Hero);
+    console.log(typeof Hero);
+    const link1 = new Hero("Link", ["Courage"]);
+    console.log(link1);
+    console.log(typeof link1);
+    console.log(Link);
+    console.log(typeof Link);
+    const link2 = new Link("Link", ["Courage"], ["Hylian Shield"], ["Master Sword"]);
+    console.log(link2);
+    console.log(typeof link2);
+    console.log(link2.greet);
+    console.log(link2.greet());
+})();
+(() => {
+    class Hero {
         static showPowers() {
             return this.name;
         }
