@@ -1,6 +1,46 @@
 "use strict";
 (() => {
     class Hero {
+        constructor(name, age, isActive) {
+            this.name = name;
+            this.age = age;
+            this.isActive = isActive;
+        }
+    }
+    class Link extends Hero {
+        train() {
+            return `${this.name} is training!`;
+        }
+    }
+    class Zelda extends Hero {
+        prayGoddess() {
+            return "Dear Goddess Hylia...";
+        }
+    }
+    console.log(Hero);
+    console.log(typeof Hero);
+    console.log(Link);
+    console.log(typeof Link);
+    console.log(Zelda);
+    console.log(typeof Zelda);
+    const link2 = new Link("Link", 21, true);
+    console.log(link2);
+    console.log(typeof link2);
+    console.log(link2.train);
+    console.log(link2.train());
+    const zelda2 = new Zelda("Zelda", 19, true);
+    console.log(zelda2);
+    console.log(typeof zelda2);
+    console.log(zelda2.prayGoddess);
+    console.log(zelda2.prayGoddess());
+    const printHeroName = (hero) => {
+        console.log(hero.name);
+    };
+    printHeroName(link2);
+    printHeroName(zelda2);
+})();
+(() => {
+    class Hero {
         constructor(name, powers, isActive) {
             this.name = name;
             this.powers = powers;
