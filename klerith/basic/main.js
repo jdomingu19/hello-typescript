@@ -47,6 +47,27 @@
     console.log(link2.introduce());
 })();
 (() => {
+    class Link {
+        constructor(name, title, hasPointedEars) {
+            this.name = name;
+            this.title = title;
+            this.hasPointedEars = hasPointedEars;
+        }
+        introduce() {
+            return `My name is ${this.name}!`;
+        }
+    }
+    console.log(Link);
+    console.log(typeof Link);
+    const link1 = new Link("Link", "Hero of Time", true);
+    console.log(link1);
+    console.log(typeof link1);
+    console.log(link1.introduce);
+    console.log(typeof link1.introduce);
+    console.log(link1.introduce());
+    console.log(typeof link1.introduce());
+})();
+(() => {
     const client1 = {
         name: "Jesús",
         age: 21,
