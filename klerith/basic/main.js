@@ -1,103 +1,66 @@
 "use strict";
 (() => {
-    const client1 = {
-        name: "Jesús",
-        age: 21,
-        address: {
-            id: 42,
-            country: "Spain",
-            city: "Barcelona",
+    const useVehicle = (vehicle) => {
+        vehicle.isEngineOn = true;
+        vehicle.maxSpeed = 100;
+        vehicle.accelerate();
+    };
+    const vehicle1 = {
+        model: "720S",
+        brand: "McLaren",
+        isEngineOn: false,
+        maxSpeed: 0,
+        accelerate() {
+            console.log(`${this.brand} ${this.model} is accelerating!`);
         },
     };
-    console.log(client1);
-    console.log(typeof client1);
-    console.log(client1.address);
-    console.log(typeof client1.address);
-    const client2 = {
-        name: "Jesús",
-        age: 21,
-        address: {
-            id: 42,
-            country: "Spain",
-            city: "Barcelona",
-        },
+    useVehicle(vehicle1);
+    console.log(useVehicle);
+    console.log(typeof useVehicle);
+    console.log(vehicle1);
+    console.log(typeof vehicle1);
+    const link = {
+        trainsRegularly: true,
+        eatWell: true,
+        sleepsEnough: true,
     };
-    console.log(client2);
-    console.log(typeof client2);
-    console.log(client2.address);
-    console.log(typeof client2.address);
-})();
-(() => {
-    const link1 = {
-        name: "Link",
-        isActive: true,
-    };
-    const link2 = {
-        name: "Link",
-        isActive: true,
-        introduce() {
-            return `The name's ${this.name}!`;
-        },
-    };
-    console.log(link1);
-    console.log(typeof link1);
-    console.log(link2);
-    console.log(typeof link2);
-    console.log(link2.introduce);
-    console.log(link2.introduce());
-})();
-(() => {
-    class Link {
-        constructor(name, title, hasPointedEars) {
-            this.name = name;
-            this.title = title;
-            this.hasPointedEars = hasPointedEars;
+    const trainsRegularly = (link) => {
+        if (link.trainsRegularly) {
+            return "Link trains regularly!";
         }
-        introduce() {
-            return `My name is ${this.name}!`;
+    };
+    console.log(link);
+    console.log(typeof link);
+    console.log(trainsRegularly);
+    console.log(typeof trainsRegularly);
+    console.log(trainsRegularly(link));
+    console.log(typeof trainsRegularly(link));
+    const getHyruleCitizensNumber = (citizens) => {
+        return citizens.length;
+    };
+    console.log(getHyruleCitizensNumber);
+    console.log(typeof getHyruleCitizensNumber);
+    console.log(getHyruleCitizensNumber(["Link", "Zelda"]));
+    console.log(typeof getHyruleCitizensNumber(["Link", "Zelda"]));
+    class Person {
+        constructor(name, age, gender, maritalStatus) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+            this.maritalStatus = maritalStatus;
+        }
+        printBiography() {
+            console.log(`Name: ${this.name} | Age: ${this.age}` +
+                ` | Gender: ${this.gender} | Marital Status: ${this.maritalStatus}`);
         }
     }
-    console.log(Link);
-    console.log(typeof Link);
-    const link1 = new Link("Link", "Hero of Time", true);
-    console.log(link1);
-    console.log(typeof link1);
-    console.log(link1.introduce);
-    console.log(typeof link1.introduce);
-    console.log(link1.introduce());
-    console.log(typeof link1.introduce());
-})();
-(() => {
-    let addTwoNumbersFunction;
-    addTwoNumbersFunction = (a, b) => {
-        return a + b;
-    };
-    console.log(addTwoNumbersFunction);
-    console.log(typeof addTwoNumbersFunction);
-    const result = addTwoNumbersFunction(5, 6);
-    console.log(result);
-    console.log(typeof result);
-})();
-(() => {
-    const client1 = {
-        name: "Jesús",
-        age: 21,
-        address: {
-            id: 42,
-            country: "Spain",
-            city: "Barcelona",
-        },
-        getCityAddress() {
-            return this.address.city;
-        },
-    };
-    console.log(client1);
-    console.log(typeof client1);
-    console.log(client1.address);
-    console.log(typeof client1.address);
-    console.log(client1.getCityAddress);
-    console.log(typeof client1.getCityAddress);
-    console.log(client1.getCityAddress());
-    console.log(typeof client1.getCityAddress());
+    console.log(Person);
+    console.log(typeof Person);
+    const person1 = new Person("Jesús", 21, "Male", "Single");
+    console.log(person1);
+    console.log(typeof person1);
+    console.log(person1.printBiography);
+    console.log(typeof person1.printBiography);
+    person1.printBiography();
 })();
 //# sourceMappingURL=main.js.map
