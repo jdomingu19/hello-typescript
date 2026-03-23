@@ -1,5 +1,33 @@
 "use strict";
 (() => {
+    const client1 = {
+        name: "Jesús",
+        age: 21,
+        address: {
+            id: 42,
+            country: "Spain",
+            city: "Barcelona",
+        },
+    };
+    console.log(client1);
+    console.log(typeof client1);
+    console.log(client1.address);
+    console.log(typeof client1.address);
+    const client2 = {
+        name: "Jesús",
+        age: 21,
+        address: {
+            id: 42,
+            country: "Spain",
+            city: "Barcelona",
+        },
+    };
+    console.log(client2);
+    console.log(typeof client2);
+    console.log(client2.address);
+    console.log(typeof client2.address);
+})();
+(() => {
     const link1 = {
         name: "Link",
         isActive: true,
