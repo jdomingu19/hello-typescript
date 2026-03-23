@@ -46,4 +46,26 @@
     console.log(link2.introduce);
     console.log(link2.introduce());
 })();
+(() => {
+    const client1 = {
+        name: "Jesús",
+        age: 21,
+        address: {
+            id: 42,
+            country: "Spain",
+            city: "Barcelona",
+        },
+        getCityAddress() {
+            return this.address.city;
+        },
+    };
+    console.log(client1);
+    console.log(typeof client1);
+    console.log(client1.address);
+    console.log(typeof client1.address);
+    console.log(client1.getCityAddress);
+    console.log(typeof client1.getCityAddress);
+    console.log(client1.getCityAddress());
+    console.log(typeof client1.getCityAddress());
+})();
 //# sourceMappingURL=main.js.map
