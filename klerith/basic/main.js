@@ -148,6 +148,47 @@
     console.log(Hero.showPowers());
 })();
 (() => {
+    class Hero1 {
+        constructor(name) {
+            this.name = name;
+        }
+    }
+    console.log(Hero1);
+    console.log(typeof Hero1);
+    const link1 = new Hero1("Link1");
+    const link2 = new Hero1("Link2");
+    const link3 = new Hero1("Link3");
+    console.log(link1);
+    console.log(link2);
+    console.log(link3);
+    class Hero2 {
+        constructor(name) {
+            this.name = name;
+        }
+        static callHero2(name) {
+            if (!Hero2.instance) {
+                Hero2.instance = new Hero2(name);
+            }
+            return Hero2.instance;
+        }
+        changeName(newName) {
+            this.name = newName;
+        }
+    }
+    console.log(Hero2);
+    console.log(typeof Hero2);
+    const link4 = Hero2.callHero2("Link4");
+    const link5 = Hero2.callHero2("Link5");
+    const link6 = Hero2.callHero2("Link6");
+    console.log(link4);
+    console.log(link5);
+    console.log(link6);
+    link6.changeName("Link7");
+    console.log(link4);
+    console.log(link5);
+    console.log(link6);
+})();
+(() => {
     class Hero {
         constructor(name, powers, isActive = true) {
             this.name = name;
