@@ -68,6 +68,17 @@
     console.log(typeof link1.introduce());
 })();
 (() => {
+    let addTwoNumbersFunction;
+    addTwoNumbersFunction = (a, b) => {
+        return a + b;
+    };
+    console.log(addTwoNumbersFunction);
+    console.log(typeof addTwoNumbersFunction);
+    const result = addTwoNumbersFunction(5, 6);
+    console.log(result);
+    console.log(typeof result);
+})();
+(() => {
     const client1 = {
         name: "Jesús",
         age: 21,
