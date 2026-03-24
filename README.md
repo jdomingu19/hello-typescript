@@ -12,7 +12,7 @@
 
 Each exercise highlights a specific concept, from the basics of type annotations to advanced techniques like generics and type inference, building confidence step by step. Alongside small programming challenges, you will find experiments with API integration, Node.js, and Express, demonstrating how TypeScript applies in real-world scenarios.
 
-Ultimately, this repository is both a sandbox for experimentation and a growing reference guide that documents my transition from JavaScript into TypeScript with clarity and discipline.
+> This repository is both a sandbox for experimentation and a growing reference guide that documents my transition from JavaScript into TypeScript with clarity and discipline.
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
