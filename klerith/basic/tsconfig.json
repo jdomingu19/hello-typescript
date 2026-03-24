@@ -54,5 +54,5 @@
     "outFile": "./main.js"
   },
   "exclude": ["excluded-folder"],
-  "include": ["exercise-4"]
+  "include": ["namespaces"]
 }

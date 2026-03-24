@@ -1,66 +1,25 @@
 "use strict";
-(() => {
-    const useVehicle = (vehicle) => {
-        vehicle.isEngineOn = true;
-        vehicle.maxSpeed = 100;
-        vehicle.accelerate();
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return text.length > 3 ? true : false;
     };
-    const vehicle1 = {
-        model: "720S",
-        brand: "McLaren",
-        isEngineOn: false,
-        maxSpeed: 0,
-        accelerate() {
-            console.log(`${this.brand} ${this.model} is accelerating!`);
-        },
+    Validations.validateDate = (date) => {
+        return !isNaN(date.valueOf()) ? true : false;
     };
-    useVehicle(vehicle1);
-    console.log(useVehicle);
-    console.log(typeof useVehicle);
-    console.log(vehicle1);
-    console.log(typeof vehicle1);
-    const link = {
-        trainsRegularly: true,
-        eatWell: true,
-        sleepsEnough: true,
-    };
-    const trainsRegularly = (link) => {
-        if (link.trainsRegularly) {
-            return "Link trains regularly!";
-        }
-    };
-    console.log(link);
-    console.log(typeof link);
-    console.log(trainsRegularly);
-    console.log(typeof trainsRegularly);
-    console.log(trainsRegularly(link));
-    console.log(typeof trainsRegularly(link));
-    const getHyruleCitizensNumber = (citizens) => {
-        return citizens.length;
-    };
-    console.log(getHyruleCitizensNumber);
-    console.log(typeof getHyruleCitizensNumber);
-    console.log(getHyruleCitizensNumber(["Link", "Zelda"]));
-    console.log(typeof getHyruleCitizensNumber(["Link", "Zelda"]));
-    class Person {
-        constructor(name, age, gender, maritalStatus) {
-            this.name = name;
-            this.age = age;
-            this.gender = gender;
-            this.maritalStatus = maritalStatus;
-        }
-        printBiography() {
-            console.log(`Name: ${this.name} | Age: ${this.age}` +
-                ` | Gender: ${this.gender} | Marital Status: ${this.maritalStatus}`);
-        }
-    }
-    console.log(Person);
-    console.log(typeof Person);
-    const person1 = new Person("Jesús", 21, "Male", "Single");
-    console.log(person1);
-    console.log(typeof person1);
-    console.log(person1.printBiography);
-    console.log(typeof person1.printBiography);
-    person1.printBiography();
-})();
+})(Validations || (Validations = {}));
+console.log(Validations);
+console.log(typeof Validations);
+console.log(Validations.validateText);
+console.log(typeof Validations.validateText);
+console.log(Validations.validateText("ABC"));
+console.log(typeof Validations.validateText("ABC"));
+console.log(Validations.validateText("ABCDE"));
+console.log(typeof Validations.validateText("ABCDE"));
+console.log(Validations.validateDate);
+console.log(typeof Validations.validateDate);
+console.log(Validations.validateDate(new Date("invalid-date")));
+console.log(typeof Validations.validateDate(new Date("invalid-date")));
+console.log(Validations.validateDate(new Date()));
+console.log(typeof Validations.validateDate(new Date()));
 //# sourceMappingURL=main.js.map
