@@ -1,4 +1,4 @@
-# Hello, TypeScript!
+# Hello, TypeScript! 👋🏻
 
 ![Static Badge](https://img.shields.io/badge/typescript-5+-1C2024?style=for-the-badge&logo=typescript&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/javascript-ES6+-1C2024?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)
@@ -16,13 +16,13 @@ Ultimately, this repository is both a sandbox for experimentation and a growing 
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
-## What's TypeScript
+## ❔ What's TypeScript
 
 > [TypeScript](https://www.typescriptlang.org/) is an open-source programming language developed and maintained by Microsoft. It builds on JavaScript by adding optional static typing, interfaces, and advanced tooling that help developers catch errors early and write more maintainable code.
 >
 > TypeScript compiles down to plain JavaScript, meaning it can run anywhere JavaScript runs, while providing a richer developer experience with features like type inference, autocompletion, and strong IDE support. It has become a popular choice for building scalable web applications and large codebases where clarity and reliability are essential.
 
-## TypeScript code example
+## 🔤 TypeScript code example
 
 ```typescript
 // Define interface for a message
@@ -57,7 +57,7 @@ showMessage(greeting);
 >
 > `[2026-03-11T14:47:00.123Z] Jesús: Hello, TypeScript! 0.19 ms`
 
-## TypeScript Technical Vocabulary
+## 📖 TypeScript Technical Vocabulary
 
 | #   | Concept                  | Definition                                                      |
 | --- | ------------------------ | --------------------------------------------------------------- |
@@ -80,7 +80,7 @@ showMessage(greeting);
 | 17  | **Ambient Declarations** | Files (`.d.ts`) that describe types of external libraries.      |
 | 18  | **Strict Mode**          | Rules that enforce stronger safety and consistency in code.     |
 
-## Repository Content
+## 📁 Repository Content
 
 ### → [`midudev/`](./midudev/)
 
@@ -102,7 +102,7 @@ The Playground section is a dedicated space for **experimentation**, **explorati
 
 By transforming these ideas into practical examples, I extend both my knowledge and my skills, creating a growing catalog of scenarios that demonstrate how TypeScript works in real contexts. This approach ensures that every exercise contributes to a deeper understanding of the language and strengthens my ability to apply it with clarity and precision.
 
-## Repository Goals
+## 🎯 Repository Goals
 
 The primary goal of this repository is to strengthen my foundation in TypeScript by practicing syntax, typing rules, and core concepts through structured examples, challenges, and course exercises. Each script highlights a specific feature of the language, making the learning process incremental and reproducible.
 
@@ -110,7 +110,7 @@ This repository is a bridge for transitioning from JavaScript into TypeScript. B
 
 > The long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for **iOS**, **Android**, and the **Web**.
 
-## License
+## 📄 License
 
 This repository is licensed under the terms of the [Apache License 2.0](LICENSE). The license grants permission to use, modify, and distribute the code with proper attribution, while ensuring that improvements and extensions remain open and accessible to the community.
 
