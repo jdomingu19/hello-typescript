@@ -27,6 +27,10 @@ import {
   genericArrowFunction,
 } from "./generics/generics";
 
+// --- Class 86: Generic Interfaces ---
+import { HeroInterface } from "./interfaces/hero";
+import { VillainInterface } from "./interfaces/villain";
+
 /**
  * Example hero instance representing Link.
  * @remarks
@@ -189,3 +193,35 @@ console.log(genericFunction(new Date()).getDate()); // 24
 console.log(genericArrowFunction("Hello, TypeScript!").toUpperCase()); // HELLO, TYPESCRIPT!
 console.log(genericArrowFunction({ x: 1, y: 2, z: 3 }).z); // 3
 console.log(genericArrowFunction(new Date()).getDate()); // 24
+
+// --- Class 86: Generic Interfaces ---
+// Demonstrating how to use generics with interfaces
+// to enforce type safety depending on the chosen interface.
+
+// Example object that could be interpreted as both Hero and Villain
+const darkLink = {
+  name: "Dark Link",
+  title: "Shadow of the Hero",
+  isActive: false,
+  isAlive: false,
+};
+
+// Using genericArrowFunction without specifying type
+console.log(genericArrowFunction(darkLink).name); // Dark Link
+console.log(genericArrowFunction(darkLink).title); // Shadow of the Hero
+console.log(genericArrowFunction(darkLink).isActive); // false
+console.log(genericArrowFunction(darkLink).isAlive); // false
+
+// Using HeroInterface with generics
+console.log(genericArrowFunction<HeroInterface>(darkLink).name); // Dark Link
+console.log(genericArrowFunction<HeroInterface>(darkLink).title); // Shadow of the Hero
+console.log(genericArrowFunction<HeroInterface>(darkLink).isActive); // false
+// Error: Property 'isAlive' does not exist on type 'HeroInterface'.
+// console.log(genericArrowFunction<HeroInterface>(darkLink).isAlive);
+
+// Using VillainInterface with generics
+console.log(genericArrowFunction<VillainInterface>(darkLink).name); // Dark Link
+console.log(genericArrowFunction<VillainInterface>(darkLink).title); // Shadow of the Hero
+console.log(genericArrowFunction<VillainInterface>(darkLink).isAlive); // false
+// Error: Property 'isActive' does not exist on type 'VillainInterface'.
+// console.log(genericArrowFunction<VillainInterface>(darkLink).isActive); // false
