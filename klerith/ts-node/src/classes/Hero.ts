@@ -2,6 +2,8 @@
 // Udemy Course by @Klerith (2021)
 // src/classes/Hero.ts
 
+// --- Class 79: Imports & Exports ---
+
 /**
  * Hero class represents a character with a name,
  * age, and a set of powers.
@@ -22,3 +24,22 @@ export class Hero {
     public powers: string[],
   ) {}
 }
+
+// --- Class 80: export default & export with alias ---
+
+/**
+ * Additional hero classes exported for demonstration.
+ * @remarks
+ * - Showcases multiple named exports.
+ * - Useful for demonstrating import aliasing and grouped imports.
+ */
+export class Hero2 {}
+export class Hero3 {}
+export class Hero4 {}
+
+/**
+ * Constant representing the developer's username.
+ * @remarks
+ * - Demonstrates exporting constants alongside classes.
+ */
+export const USERNAME = "@jdomingu19";
