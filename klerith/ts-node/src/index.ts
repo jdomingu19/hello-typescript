@@ -18,7 +18,14 @@ import powersArray, { PowerInterface } from "./helpers/powers";
 import Exercise5Hero from "./exercise-5/Hero";
 
 // --- Class 84: Generics Introduction ---
-import { printObject, genericFunction } from "./generics/generics";
+// import { printObject, genericFunction } from "./generics/generics";
+
+// --- Class 85: Generic Functions ---
+import {
+  printObject,
+  genericFunction,
+  genericArrowFunction,
+} from "./generics/generics";
 
 /**
  * Example hero instance representing Link.
@@ -164,3 +171,21 @@ console.log(genericFunction(42).toFixed(2)); // 42.00
 
 // Runtime error: (0 , generics_1.genericFunction)({ x: 1, y: 2, z: 3 }).toFixed is not a function
 // console.log(genericFunction({ x: 1, y: 2, z: 3 }).toFixed(2));
+
+// --- Class 85: Generic Functions ---
+// Demonstrating type safety with generics compared to 'any'
+
+// Now editor knows toFixed does not exist on type string and object
+// These lines would cause compile-time errors instead of runtime errors:
+// console.log(genericFunction("Hello, TypeScript!").toFixed(2));
+// console.log(genericFunction({ x: 1, y: 2, z: 3 }).toFixed(2));
+
+// Valid usage examples with proper type inference
+console.log(genericFunction("Hello, TypeScript!").toUpperCase()); // HELLO, TYPESCRIPT!
+console.log(genericFunction({ x: 1, y: 2, z: 3 }).z); // 3
+console.log(genericFunction(new Date()).getDate()); // 24
+
+// Arrow function version of genericFunction
+console.log(genericArrowFunction("Hello, TypeScript!").toUpperCase()); // HELLO, TYPESCRIPT!
+console.log(genericArrowFunction({ x: 1, y: 2, z: 3 }).z); // 3
+console.log(genericArrowFunction(new Date()).getDate()); // 24
