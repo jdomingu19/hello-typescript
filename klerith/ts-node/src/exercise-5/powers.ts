@@ -1,15 +1,15 @@
 // Hello, TypeScript! @jdomingu19
 // Udemy Course by @Klerith (2021)
-// src/helpers/powers.ts
+// src/exercise-5/powers.ts
 
-// --- Class 80: export default & export with alias ---
+// --- Class 81: Exercise 5 ---
 
 /**
  * PowerInterface defines the structure of a hero power.
  * @remarks
  * - Each power has an id and a description.
  */
-export interface PowerInterface {
+interface PowerInterface {
   id: number;
   description: string;
 }
