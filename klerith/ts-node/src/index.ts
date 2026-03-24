@@ -17,6 +17,9 @@ import powersArray, { PowerInterface } from "./helpers/powers";
 // --- Class 81: Exercise 5 ---
 import Exercise5Hero from "./exercise-5/Hero";
 
+// --- Class 84: Generics Introduction ---
+import { printObject, genericFunction } from "./generics/generics";
+
 /**
  * Example hero instance representing Link.
  * @remarks
@@ -138,3 +141,26 @@ console.log(typeof link3.powerId); // number
 
 console.log(link3.getPowerDescription); // not found
 console.log(typeof link3.getPowerDescription); // string
+
+// --- Class 84: Generics Introduction ---
+
+// Function call examples with different argument types
+printObject(42); // 42
+printObject("Hello, TypeScript!"); // Hello, TypeScript!
+printObject({ x: 1, y: 2, z: 3 }); // { x: 1, y: 2, z: 3 }
+
+// Using genericFunction with different argument types
+console.log(genericFunction(42)); // 42
+console.log(genericFunction("Hello, TypeScript!")); // Hello, TypeScript!
+console.log(genericFunction({ x: 1, y: 2, z: 3 })); // { x: 1, y: 2, z: 3 }
+
+// Demonstrating type-specific method usage
+console.log(genericFunction(42).toFixed(2)); // 42.00
+
+// Runtime error examples when using `any` without type safety
+
+// Runtime error: (0 , generics_1.genericFunction)("Hello, TypeScript!").toFixed is not a function
+// console.log(genericFunction("Hello, TypeScript!").toFixed(2));
+
+// Runtime error: (0 , generics_1.genericFunction)({ x: 1, y: 2, z: 3 }).toFixed is not a function
+// console.log(genericFunction({ x: 1, y: 2, z: 3 }).toFixed(2));
