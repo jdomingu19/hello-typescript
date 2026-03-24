@@ -110,7 +110,7 @@ This repository is a bridge for transitioning from JavaScript into TypeScript. B
 
 > The long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for **iOS**, **Android**, and the **Web**.
 
-## 📄 License
+## 📝 License
 
 This repository is licensed under the terms of the [Apache License 2.0](LICENSE). The license grants permission to use, modify, and distribute the code with proper attribution, while ensuring that improvements and extensions remain open and accessible to the community.
 
