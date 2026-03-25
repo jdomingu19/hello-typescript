@@ -1,20 +1,8 @@
-# Proyecto inicial - Curso de TypeScript
+# ts-node folder
 
-- Lo primero que debemos de hacer después de descargar el código es ejecutar el comando:
+Reprehenderit laborum commodo exercitation tempor. In ea enim ipsum ex reprehenderit incididunt magna nisi nisi eu proident mollit.
 
-```
-npm install
-```
-
-Ese comando descargará todos los módulos de node necesarios para ejecutar el proyecto.
-
-- Cuando termine de instalar los node_modules, entonces podremos ejecutar el proyecto de con el siguiente comando
-
-```
-npm start
-```
-
-Para que eso funcione, recuerden que deben de ejecutar ese comando en el mismo directorio donde se encuentra el `package.json`
+> Tempor proident tempor duis exercitation sit amet duis. Exercitation irure tempor commodo nisi cupidatat amet laborum occaecat do mollit cupidatat sint aliquip nulla.
 
 ## Cambiar el puerto
 
@@ -24,6 +12,24 @@ Por defecto, el puerto que configuré para este proyecto es el `8081`, pero si n
 "start": "webpack serve --mode development --open --port=8081"
 ```
 
-Simplemente cambian el puerto por el que ustedes necesiten y listo. (lógicamente graban los cambios antes de ejecutar el `npm start` nuevamente)
+## Comandos Usados
 
-# curso-typescript
+Mollit elit fugiat qui nulla culpa.:
+
+```bash
+npm install
+```
+
+Eiusmod sit est adipisicing consectetur adipisicing.:
+
+```bash
+npm start
+```
+
+Quis ad sint dolore dolor consequat laboris.:
+
+```bash
+npm install axios
+```
+
+> Built with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
