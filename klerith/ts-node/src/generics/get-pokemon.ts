@@ -8,6 +8,9 @@
 
 import axios from "axios";
 
+// --- Class 89: Mapping HTTP Response ---
+import { PokemonAPIInterface, PokemonInterface } from "../interfaces";
+
 /**
  * Fetches Pokémon data from the PokéAPI.
  *
@@ -19,16 +22,62 @@ import axios from "axios";
  * - Shows how to handle Promises with then/catch/finally.
  * - Uses Axios to perform HTTP requests.
  */
-export const getPokemon = async (pokemonId: number) => {
-  // Example debug logs (commented out)
-  // console.log("Hello, Pokemon!");
-  // throw new Error("Something went wrong...");
+// export const getPokemon = async (pokemonId: number) => {
+//   // Example debug logs (commented out)
+//   // console.log("Hello, Pokemon!");
+//   // throw new Error("Something went wrong...");
 
-  const resp = await axios.get(
+//   const resp = await axios.get(
+//     `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
+//   );
+
+//   console.log(resp);
+
+//   return resp;
+// };
+
+// --- Class 89: Mapping HTTP Response ---
+
+// export const getPokemon = async (
+//   pokemonId: number,
+// ): Promise<PokemonInterface> => {
+//   const resp = await axios.get<PokemonInterface>(
+//     `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
+//   );
+
+//   console.log(resp.data.name);
+//   console.log(resp.data.picture);
+
+//   // Error: Property 'food' does not exist on type 'PokemonInterface'.
+//   // console.log(resp.data.food);
+
+//   return resp.data;
+// };
+
+// export const getPokemon = async (
+//   pokemonId: number,
+// ): Promise<PokemonAPIInterface> => {
+//   const resp = await axios.get<PokemonAPIInterface>(
+//     `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
+//   );
+
+//   console.log(resp.data);
+
+//   // Error: Property 'picture' does not exist on type 'PokemonAPIInterface'.
+//   // console.log(resp.data.picture);
+
+//   // Error: Property 'food' does not exist on type 'PokemonAPIInterface'.
+//   // console.log(resp.data.food);
+
+//   return resp.data;
+// };
+
+export const getPokemon = async (
+  pokemonId: number,
+): Promise<PokemonAPIInterface> => {
+  const { data } = await axios.get<PokemonAPIInterface>(
     `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
   );
 
-  console.log(resp);
-
-  return resp;
+  return data;
 };

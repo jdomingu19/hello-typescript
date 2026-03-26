@@ -23,19 +23,39 @@ import { getPokemon } from "./generics/get-pokemon";
 //   .finally(() => console.log("Finished")); // Finished
 
 // Fetching Charizard (ID: 6)
-getPokemon(6)
-  .then((resp) => console.log(resp)) // { data: { ... }, status: 200, statusText: '', headers: AxiosHeaders, config: { ... },  ... }
-  .catch((error) => console.log(error))
-  .finally(() => console.log("Finished")); // Finished
+// getPokemon(6)
+//   .then((resp) => console.log(resp)) // { data: { ... }, status: 200, statusText: '', headers: AxiosHeaders, config: { ... },  ... }
+//   .catch((error) => console.log(error))
+//   .finally(() => console.log("Finished")); // Finished
 
 // Fetching Pikachu (ID: 25)
-getPokemon(25)
-  .then((resp) => console.log(resp)) // { data: { ... }, status: 200, statusText: '', headers: AxiosHeaders, config: { ... },  ... }
-  .catch((error) => console.log(error))
-  .finally(() => console.log("Finished")); // Finished
+// getPokemon(25)
+//   .then((resp) => console.log(resp)) // { data: { ... }, status: 200, statusText: '', headers: AxiosHeaders, config: { ... },  ... }
+//   .catch((error) => console.log(error))
+//   .finally(() => console.log("Finished")); // Finished
+
+// Fetching Cubone (ID: 104 )
+// getPokemon(104)
+//   .then((resp) => console.log(resp)) // { data: { ... }, status: 200, statusText: '', headers: AxiosHeaders, config: { ... },  ... }
+//   .catch((error) => console.log(error))
+//   .finally(() => console.log("Finished")); // Finished
+
+// --- Class 89: Mapping HTTP Response ---
 
 // Fetching Cubone (ID: 104 )
 getPokemon(104)
-  .then((resp) => console.log(resp)) // { data: { ... }, status: 200, statusText: '', headers: AxiosHeaders, config: { ... },  ... }
+  .then((pokemonData) => {
+    console.log(pokemonData.name); // cubone
+    console.log(pokemonData.sprites.front_default); // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png
+  })
+  .catch((error) => console.log(error))
+  .finally(() => console.log("Finished")); // Finished
+
+// Fetching Marowak (ID: 105 )
+getPokemon(105)
+  .then((pokemonData) => {
+    console.log(pokemonData.name); // marowak
+    console.log(pokemonData.sprites.front_default); // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png
+  })
   .catch((error) => console.log(error))
   .finally(() => console.log("Finished")); // Finished

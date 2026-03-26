@@ -6,4 +6,6 @@
 
 // Barrel file that groups and re-exports interfaces.
 export { HeroInterface } from "./hero";
+export { PokemonAPIInterface } from "./pokemon-api";
+export { PokemonInterface } from "./pokemon";
 export { VillainInterface } from "./villain";
