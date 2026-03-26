@@ -50,6 +50,62 @@
  * - It demonstrates how decorators can intercept class
  *   definitions and log metadata.
  */
+// function printToConsole(constructor: Function): void {
+//   console.log(constructor);
+// }
+
+/**
+ * Factory decorator that conditionally applies the
+ * `printToConsole` decorator based on the provided flag.
+ *
+ * @param print - A boolean flag to enable or disable printing.
+ * @returns A decorator function that either logs the constructor
+ *          or does nothing depending on the flag.
+ *
+ * @remarks
+ * - Demonstrates how to create decorator factories in TypeScript.
+ * - Factory decorators allow passing arguments to control behavior.
+ * - In this example, setting `print` to `true` will log the class
+ *   constructor when the class is defined.
+//  */
+// const printToConsoleConditional = (print: boolean = false): Function => {
+//   // return (): void => console.log("Hello, TypeScript!");
+//   if (print) {
+//     return printToConsole;
+//   } else {
+//     return (): void => {};
+//   }
+// };
+
+/**
+ * Represents a Pokémon API class decorated with
+ * `printToConsoleConditional`.
+ *
+ * @remarks
+ * - When decorated with `@printToConsoleConditional(true)`,
+ *   the constructor will be logged to the console at definition time.
+ * - Contains a public property `publicAPI` pointing to the
+ *   PokéAPI base URL.
+ * - The constructor accepts a Pokémon name to demonstrate usage.
+ */
+// @printToConsoleConditional(true)
+// export class PokemonAPI {
+//   public publicAPI: string = "https://pokeapi.co";
+//   constructor(public name: string) {}
+// }
+
+// --- Class 96: Block a Prototype ---
+
+/**
+ * A simple decorator that prints the constructor
+ * function to the console when the class is defined.
+ *
+ * @remarks
+ * - This decorator is used as the base implementation
+ *   for conditional printing in the factory decorator.
+ * - It demonstrates how decorators can intercept class
+ *   definitions and log metadata.
+ */
 function printToConsole(constructor: Function): void {
   console.log(constructor);
 }
@@ -69,25 +125,42 @@ function printToConsole(constructor: Function): void {
  *   constructor when the class is defined.
  */
 const printToConsoleConditional = (print: boolean = false): Function => {
-  // return (): void => console.log("Hello, TypeScript!");
-  if (print) {
-    return printToConsole;
-  } else {
-    return (): void => {};
-  }
+  return print ? printToConsole : (): void => {};
+};
+
+/**
+ * Decorator that seals a class and its prototype,
+ * preventing new properties from being added.
+ *
+ * @param constructor - The constructor function of the class.
+ *
+ * @remarks
+ * - Uses `Object.seal` to block extensions on both the class
+ *   and its prototype.
+ * - Ensures that the class definition cannot be modified
+ *   after being sealed.
+ * - Demonstrates how decorators can enforce immutability
+ *   at the prototype level.
+ */
+const blockPrototype = function (constructor: Function): void {
+  Object.seal(constructor);
+  Object.seal(constructor.prototype);
 };
 
 /**
  * Represents a Pokémon API class decorated with
- * `printToConsoleConditional`.
+ * `blockPrototype` and `printToConsoleConditional`.
  *
  * @remarks
- * - When decorated with `@printToConsoleConditional(true)`,
- *   the constructor will be logged to the console at definition time.
+ * - `@blockPrototype` seals the class and its prototype,
+ *   preventing further modifications.
+ * - `@printToConsoleConditional(true)` logs the constructor
+ *   when the class is defined.
  * - Contains a public property `publicAPI` pointing to the
  *   PokéAPI base URL.
  * - The constructor accepts a Pokémon name to demonstrate usage.
  */
+@blockPrototype
 @printToConsoleConditional(true)
 export class PokemonAPI {
   public publicAPI: string = "https://pokeapi.co";

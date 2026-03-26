@@ -19,3 +19,22 @@ const cubone = new PokemonAPI("Cubone");
 
 console.log(cubone); // PokemonAPI {name: 'Cubone', publicAPI: 'https://pokeapi.co'}
 console.log(typeof cubone); // object
+
+// --- Class 96: Block a Prototype ---
+
+// Logs the prototype object of the class
+console.log(PokemonAPI.prototype); // { constructor: class PokemonAPI, [[Prototype]]: Object }
+console.log(typeof PokemonAPI.prototype); // object
+
+// Attempting to add a new property to a sealed prototype
+// Error: Property 'sprites' does not exist on type 'PokemonAPI'.
+// PokemonAPI.prototype.sprites = {
+//   front_default:
+//     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+// };
+
+// Runtime error: Uncaught TypeError: Cannot add property sprites, object is not extensible
+// (PokemonAPI.prototype as any).sprites = {
+//   front_default:
+//     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+// };
