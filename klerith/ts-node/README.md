@@ -1,32 +1,35 @@
 # ts-node folder
 
-Reprehenderit laborum commodo exercitation tempor. In ea enim ipsum ex reprehenderit incididunt magna nisi nisi eu proident mollit.
+This folder contains TypeScript examples and exercises from the Udemy course by @Klerith (2021).  
+It demonstrates how to work with Node.js, TypeScript, Webpack, and Axios to build and run projects with strong typing and modern tooling.
 
-> Tempor proident tempor duis exercitation sit amet duis. Exercitation irure tempor commodo nisi cupidatat amet laborum occaecat do mollit cupidatat sint aliquip nulla.
+> All examples are designed to be clear, reproducible, and educational, showing how TypeScript can be applied in real-world scenarios.
 
-## Cambiar el puerto
+## ⚙️ Change the Port
 
-Por defecto, el puerto que configuré para este proyecto es el `8081`, pero si necesitan cambiarlo porque pueda que ese puerto lo use su computadora, pueden cambiarlo abriendo el `package.json` >> scripts. Ahí verán la instrucción que lanza el servidor de desarrollo
+By default, the development server runs on port `8081`.  
+If your computer is already using that port, you can change it by editing the `package.json` file under the `scripts` section.  
+Locate the `start` script and update the port value:
 
-```
+```json
 "start": "webpack serve --mode development --open --port=8081"
 ```
 
-## Comandos Usados
+## 📦 Commands Used
 
-Mollit elit fugiat qui nulla culpa.:
+Install project dependencies:
 
 ```bash
 npm install
 ```
 
-Eiusmod sit est adipisicing consectetur adipisicing.:
+Start the development server:
 
 ```bash
 npm start
 ```
 
-Quis ad sint dolore dolor consequat laboris.:
+Install Axios for HTTP requests:
 
 ```bash
 npm install axios
