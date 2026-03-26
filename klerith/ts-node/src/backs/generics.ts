@@ -1,6 +1,6 @@
 // Hello, TypeScript! @jdomingu19
 // Udemy Course by @Klerith (2021)
-// backs/generics.ts
+// src/backs/generics.ts
 
 // --- Class 79: Imports & Exports ---
 // import { Hero } from "../classes/Hero";
