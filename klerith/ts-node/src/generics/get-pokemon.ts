@@ -9,7 +9,14 @@
 import axios from "axios";
 
 // --- Class 89: Mapping HTTP Response ---
-import { PokemonAPIInterface, PokemonInterface } from "../interfaces";
+// import { PokemonAPIInterface, PokemonInterface } from "../interfaces";
+
+// --- Class 90: Mapping HTTP Response with Quicktype Extension ---
+import {
+  PokemonAPIInterface,
+  PokemonAPIQuicktypeInterface,
+  PokemonInterface,
+} from "../interfaces";
 
 /**
  * Fetches Pokémon data from the PokéAPI.
@@ -72,10 +79,36 @@ import { PokemonAPIInterface, PokemonInterface } from "../interfaces";
 //   return resp.data;
 // };
 
+// export const getPokemon = async (
+//   pokemonId: number,
+// ): Promise<PokemonAPIInterface> => {
+//   const { data } = await axios.get<PokemonAPIInterface>(
+//     `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
+//   );
+
+//   return data;
+// };
+
+// --- Class 90: Mapping HTTP Response with Quicktype Extension ---
+
+/**
+ * Fetches detailed Pokémon data from the PokéAPI v2.
+ *
+ * @param pokemonId - The numeric ID of the Pokémon to fetch.
+ * @returns A Promise resolving to a `PokemonAPIQuicktypeInterface` object
+ *          containing the full mapped response from the API.
+ *
+ * @remarks
+ * - This function demonstrates how to map an HTTP response into a strongly
+ *   typed interface generated with Quicktype.
+ * - Ensures type safety when consuming external API data in TypeScript.
+ * - Uses Axios to perform the HTTP request and automatically infers the
+ *   response type.
+ */
 export const getPokemon = async (
   pokemonId: number,
-): Promise<PokemonAPIInterface> => {
-  const { data } = await axios.get<PokemonAPIInterface>(
+): Promise<PokemonAPIQuicktypeInterface> => {
+  const { data } = await axios.get<PokemonAPIQuicktypeInterface>(
     `https://pokeapi.co/api/v2/pokemon/${pokemonId}`,
   );
 
