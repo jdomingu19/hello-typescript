@@ -18,4 +18,16 @@ Id anim aliquip consectetur aliqua deserunt amet consequat exercitation proident
 node index
 ```
 
+Id anim aliquip consectetur aliqua deserunt amet consequat exercitation proident excepteur.
+
+```bash
+node install express
+```
+
+Id anim aliquip consectetur aliqua deserunt amet consequat exercitation proident excepteur.
+
+```bash
+tsc index.ts
+```
+
 > Built with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
