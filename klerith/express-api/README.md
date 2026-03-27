@@ -1,33 +1,46 @@
 # express-api folder
 
-Fugiat culpa consequat anim duis mollit qui deserunt. Labore qui ea nulla aliquip ullamco et ex eiusmod.
+This folder contains a basic REST API project built with Express and TypeScript.  
+It demonstrates how to initialize an Express application, define routes, and return JSON responses.
 
-> Lorem ullamco id incididunt dolore et labore consequat deserunt ipsum ea eu eiusmod et. Consectetur pariatur duis quis ex duis dolore nostrud minim.
+> The project includes an example `index.ts` file that sets up an Express server, defines a root GET endpoint, and responds with a JSON object confirming that the API is working correctly.
 
 ## 📦 Commands Used
 
-Id anim aliquip consectetur aliqua deserunt amet consequat exercitation proident excepteur.
+This command initializes a new Node.js project and creates a `package.json` file with project metadata.
 
 ```bash
 npm init
 ```
 
-Id anim aliquip consectetur aliqua deserunt amet consequat exercitation proident excepteur.
+This command runs the application using Node.js and executes the `index.js` file.
 
 ```bash
 node index
 ```
 
-Id anim aliquip consectetur aliqua deserunt amet consequat exercitation proident excepteur.
+This command installs the Express framework as a dependency in the project.
 
 ```bash
 node install express
 ```
 
-Id anim aliquip consectetur aliqua deserunt amet consequat exercitation proident excepteur.
+This command compiles the TypeScript file `index.ts` into JavaScript.
 
 ```bash
 tsc index.ts
+```
+
+This command initializes a new TypeScript configuration file `tsconfig.json` in the project.
+
+```bash
+tsc --init
+```
+
+This command compiles all TypeScript files in the project according to the configuration in `tsconfig.json`.
+
+```bash
+tsc
 ```
 
 > Built with '\u{2665}' (♥) by Jesús Domínguez [@jdomingu19](https://github.com/jdomingu19/)
