@@ -15,16 +15,16 @@ import { PokemonAPI } from "./decorators/pokemon-class";
  * - Demonstrates how decorators execute at class definition time,
  *   while the instance behaves normally at runtime.
  */
-const cubone = new PokemonAPI("Cubone");
+// const cubone = new PokemonAPI("Cubone");
 
-console.log(cubone); // PokemonAPI {name: 'Cubone', publicAPI: 'https://pokeapi.co'}
-console.log(typeof cubone); // object
+// console.log(cubone); // PokemonAPI {name: 'Cubone', publicAPI: 'https://pokeapi.co'}
+// console.log(typeof cubone); // object
 
 // --- Class 96: Block a Prototype ---
 
 // Logs the prototype object of the class
-console.log(PokemonAPI.prototype); // { constructor: class PokemonAPI, [[Prototype]]: Object }
-console.log(typeof PokemonAPI.prototype); // object
+// console.log(PokemonAPI.prototype); // { constructor: class PokemonAPI, [[Prototype]]: Object }
+// console.log(typeof PokemonAPI.prototype); // object
 
 // Attempting to add a new property to a sealed prototype
 // Error: Property 'sprites' does not exist on type 'PokemonAPI'.
@@ -46,5 +46,21 @@ console.log(typeof PokemonAPI.prototype); // object
 // cubone.savePokemonToDatabase(-104); // Pokemon saved to database successfully! -104
 
 // With validation using method decorators
+// cubone.savePokemonToDatabase(104); // Pokemon saved to database successfully! 104
+// cubone.savePokemonToDatabase(-104); // Invalid Pokemon ID. Must be between 1 and 800...
+
+// --- Class 98: Property Decorators ---
+
+const cubone = new PokemonAPI("Cubone");
+
+console.log(cubone); // PokemonAPI {name: 'Cubone', publicAPI: 'https://pokeapi.co'}
+console.log(typeof cubone); // object
 cubone.savePokemonToDatabase(104); // Pokemon saved to database successfully! 104
-cubone.savePokemonToDatabase(-104); // Invalid Pokemon ID. Must be between 1 and 800...
+
+// Using just private keyword on class
+// Even though publicAPI is private you can change its value at runtime
+// cubone.publicAPI = "https://github.com";
+
+// Using property decorators
+// Runtime error: Uncaught TypeError: Cannot assign to read only property 'publicAPI' of object '#<PokemonAPI>'
+// cubone.publicAPI = "https://github.com";
