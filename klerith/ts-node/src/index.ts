@@ -38,3 +38,13 @@ console.log(typeof PokemonAPI.prototype); // object
 //   front_default:
 //     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
 // };
+
+// --- Class 97: Method Decorators ---
+
+// Without validation (commented out for clarity)
+// cubone.savePokemonToDatabase(104); // Pokemon saved to database successfully! 104
+// cubone.savePokemonToDatabase(-104); // Pokemon saved to database successfully! -104
+
+// With validation using method decorators
+cubone.savePokemonToDatabase(104); // Pokemon saved to database successfully! 104
+cubone.savePokemonToDatabase(-104); // Invalid Pokemon ID. Must be between 1 and 800...

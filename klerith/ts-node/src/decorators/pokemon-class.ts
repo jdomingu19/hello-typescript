@@ -106,6 +106,78 @@
  * - It demonstrates how decorators can intercept class
  *   definitions and log metadata.
  */
+// function printToConsole(constructor: Function): void {
+//   console.log(constructor);
+// }
+
+/**
+ * Factory decorator that conditionally applies the
+ * `printToConsole` decorator based on the provided flag.
+ *
+ * @param print - A boolean flag to enable or disable printing.
+ * @returns A decorator function that either logs the constructor
+ *          or does nothing depending on the flag.
+ *
+ * @remarks
+ * - Demonstrates how to create decorator factories in TypeScript.
+ * - Factory decorators allow passing arguments to control behavior.
+ * - In this example, setting `print` to `true` will log the class
+ *   constructor when the class is defined.
+ */
+// const printToConsoleConditional = (print: boolean = false): Function => {
+//   return print ? printToConsole : (): void => {};
+// };
+
+/**
+ * Decorator that seals a class and its prototype,
+ * preventing new properties from being added.
+ *
+ * @param constructor - The constructor function of the class.
+ *
+ * @remarks
+ * - Uses `Object.seal` to block extensions on both the class
+ *   and its prototype.
+ * - Ensures that the class definition cannot be modified
+ *   after being sealed.
+ * - Demonstrates how decorators can enforce immutability
+ *   at the prototype level.
+ */
+// const blockPrototype = function (constructor: Function): void {
+//   Object.seal(constructor);
+//   Object.seal(constructor.prototype);
+// };
+
+/**
+ * Represents a Pokémon API class decorated with
+ * `blockPrototype` and `printToConsoleConditional`.
+ *
+ * @remarks
+ * - `@blockPrototype` seals the class and its prototype,
+ *   preventing further modifications.
+ * - `@printToConsoleConditional(true)` logs the constructor
+ *   when the class is defined.
+ * - Contains a public property `publicAPI` pointing to the
+ *   PokéAPI base URL.
+ * - The constructor accepts a Pokémon name to demonstrate usage.
+ */
+// @blockPrototype
+// @printToConsoleConditional(true)
+// export class PokemonAPI {
+//   public publicAPI: string = "https://pokeapi.co";
+//   constructor(public name: string) {}
+// }
+
+// --- Class 97: Method Decorators ---
+
+/**
+ * A simple class decorator that prints the constructor
+ * function to the console when the class is defined.
+ *
+ * @remarks
+ * - Demonstrates how decorators can intercept and extend
+ *   class behavior at definition time.
+ * - Useful for debugging or inspecting class metadata.
+ */
 function printToConsole(constructor: Function): void {
   console.log(constructor);
 }
@@ -119,7 +191,6 @@ function printToConsole(constructor: Function): void {
  *          or does nothing depending on the flag.
  *
  * @remarks
- * - Demonstrates how to create decorator factories in TypeScript.
  * - Factory decorators allow passing arguments to control behavior.
  * - In this example, setting `print` to `true` will log the class
  *   constructor when the class is defined.
@@ -139,13 +210,46 @@ const printToConsoleConditional = (print: boolean = false): Function => {
  *   and its prototype.
  * - Ensures that the class definition cannot be modified
  *   after being sealed.
- * - Demonstrates how decorators can enforce immutability
- *   at the prototype level.
  */
 const blockPrototype = function (constructor: Function): void {
   Object.seal(constructor);
   Object.seal(constructor.prototype);
 };
+
+/**
+ * Method decorator that validates Pokémon IDs before
+ * executing the original method.
+ *
+ * @returns A decorator function that wraps the target method
+ *          with validation logic.
+ *
+ * @remarks
+ * - Ensures that the provided Pokémon ID is within the valid range (1–800).
+ * - If the ID is invalid, logs an error message and prevents execution.
+ * - Demonstrates how method decorators can intercept and extend
+ *   method behavior at runtime.
+ */
+function CheckValidPokemonID() {
+  return function (
+    target: any,
+    propertyKey: string,
+    descriptor: PropertyDescriptor,
+  ) {
+    // console.log({ target, propertyKey, descriptor });
+    // descriptor.value = () => console.log("Hello, Pokemon!");
+
+    const originalMethod = descriptor.value;
+
+    descriptor.value = (pokemonId: number) => {
+      if (pokemonId < 1 || pokemonId > 800) {
+        return console.error(
+          "Invalid Pokemon ID. Must be between 1 and 800...",
+        );
+      }
+      return originalMethod(pokemonId);
+    };
+  };
+}
 
 /**
  * Represents a Pokémon API class decorated with
@@ -156,13 +260,33 @@ const blockPrototype = function (constructor: Function): void {
  *   preventing further modifications.
  * - `@printToConsoleConditional(true)` logs the constructor
  *   when the class is defined.
- * - Contains a public property `publicAPI` pointing to the
- *   PokéAPI base URL.
- * - The constructor accepts a Pokémon name to demonstrate usage.
+ * - Includes a method `savePokemonToDatabase` decorated with
+ *   `@CheckValidPokemonID()` to validate IDs before saving.
  */
 @blockPrototype
 @printToConsoleConditional(true)
 export class PokemonAPI {
+  /** Base URL for the PokeAPI */
   public publicAPI: string = "https://pokeapi.co";
+
+  /**
+   * Creates a new instance of `PokemonAPI`.
+   *
+   * @param name - The name of the Pokémon.
+   */
   constructor(public name: string) {}
+
+  /**
+   * Saves a Pokémon to the database.
+   *
+   * @param pokemonID - The Pokémon ID to save.
+   * @remarks
+   * - Decorated with `@CheckValidPokemonID()` to ensure
+   *   the ID is valid before execution.
+   * - Logs a success message if the ID passes validation.
+   */
+  @CheckValidPokemonID()
+  public savePokemonToDatabase(pokemonID: number): void {
+    console.log(`Pokemon saved to database successfully! ${pokemonID}`);
+  }
 }
