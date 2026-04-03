@@ -20,42 +20,7 @@
 >
 > TypeScript compiles down to plain JavaScript, meaning it can run anywhere JavaScript runs, while providing a richer developer experience with features like type inference, autocompletion, and strong IDE support. It has become a popular choice for building scalable web applications and large codebases where clarity and reliability are essential.
 
-## 🔤 TypeScript code example
-
-```typescript
-// Define interface for a message
-interface Message {
-  id: number;
-  text: string;
-  author: string;
-  timestamp: Date;
-}
-
-// Define type for a logger function
-type Logger = (msg: Message) => void;
-
-// Implement typed logger function
-const showMessage: Logger = (msg) => {
-  console.log(`[${msg.timestamp.toISOString()}] ${msg.author}: ${msg.text}`);
-};
-
-// Create a strongly typed message object
-const greeting: Message = {
-  id: 1,
-  text: "Hello, TypeScript!",
-  author: "Jesús",
-  timestamp: new Date(),
-};
-
-// Call typed function with typed object
-showMessage(greeting);
-```
-
-> `@Jesús hello-typescript/greeting.ts git(main)`
->
-> `[2026-03-11T14:47:00.123Z] Jesús: Hello, TypeScript! 0.19 ms`
-
-## 📖 TypeScript Technical Vocabulary
+### TypeScript Technical Vocabulary
 
 | #   | Concept                  | Definition                                                      |
 | --- | ------------------------ | --------------------------------------------------------------- |
@@ -78,7 +43,21 @@ showMessage(greeting);
 | 17  | **Ambient Declarations** | Files (`.d.ts`) that describe types of external libraries.      |
 | 18  | **Strict Mode**          | Rules that enforce stronger safety and consistency in code.     |
 
-## 📁 Repository Content
+## 🗂️ Repository Content
+
+### → [`klerith/`](./klerith/)
+
+**Custom TypeScript Scripts:** a curated collection of personalized examples created while studying, each one designed to reinforce concepts through practical experimentation and clear documentation.
+
+**Course Notes and Summaries:** structured notes that capture the main lessons, explanations, and insights from the Udemy TypeScript course (2023), organized for quick reference and future review.
+
+**Learning Resources and Utilities:** additional snippets, helper functions, and annotated exercises that extend the course material, serving as a personal toolkit for mastering TypeScript fundamentals and advanced features.
+
+> [Klerith](https://github.com/Klerith) is a software engineer and educator who publishes programming courses and tutorials focused on modern web development.
+>
+> He is recognized for his clear teaching style and practical examples, helping thousands of developers learn technologies such as JavaScript, TypeScript, Node.js, and React.
+>
+> His courses emphasize hands-on practice, guiding learners step by step to build confidence and apply modern programming techniques effectively in real-world projects.
 
 ### → [`midudev/`](./midudev/)
 
@@ -96,17 +75,25 @@ showMessage(greeting);
 
 ### → [`playground/`](./playground/)
 
-The Playground section is a dedicated space for **experimentation**, **exploration**, and **discovery** within TypeScript. Each script captures patterns, curiosities, and language behaviors that emerge as I study, while also reflecting questions and insights gained from learning with others.
+**Experimentation:** scripts designed to test TypeScript features in isolation, allowing me to explore language behavior and edge cases with practical examples.
 
-By transforming these ideas into practical examples, I extend both my knowledge and my skills, creating a growing catalog of scenarios that demonstrate how TypeScript works in real contexts. This approach ensures that every exercise contributes to a deeper understanding of the language and strengthens my ability to apply it with clarity and precision.
+**Exploration:** exercises that extend beyond the course material, capturing curiosities, alternative approaches, and deeper insights discovered while studying.
+
+**Discovery:** notes and implementations that transform questions into working code, building a catalog of scenarios that strengthen understanding and highlight real-world applications.
+
+> The Playground is a personal space for learning and growth, where each script reflects both technical practice and creative exploration.
+>
+> It serves as a living record of my journey with TypeScript, documenting experiments, insights, and solutions in a structured and reproducible way.
+>
+> Through this approach, I ensure that every exercise contributes positively to my mastery of the language and supports future reference and teaching.
 
 ## 🎯 Repository Goals
 
-The primary goal of this repository is to strengthen my foundation in TypeScript by practicing syntax, typing rules, and core concepts through structured examples, challenges, and course exercises. Each script highlights a specific feature of the language, making the learning process incremental and reproducible.
-
-This repository is a bridge for transitioning from JavaScript into TypeScript. By consolidating knowledge in typing, interfaces, and modular design, I am preparing for deeper work with Node.js, React, React Native, and Expo. This progression ensures that I can apply TypeScript effectively in both backend and frontend environments.
-
-> The long-term vision is to use this repository as a stepping stone toward building cross‑platform applications for **iOS**, **Android**, and the **Web**.
+> **Strengthen TypeScript Foundations:** practice syntax, typing rules, and core concepts through structured examples, challenges, and course exercises. Each script highlights a specific feature of the language, making the learning process incremental and reproducible.
+>
+> **Bridge from JavaScript to TypeScript:** consolidate knowledge in typing, interfaces, and modular design as preparation for deeper work with Node.js, React, React Native, and Expo. This progression ensures TypeScript can be applied effectively in both backend and frontend environments.
+>
+> **Long-Term Vision:** use this repository as a stepping stone toward building cross‑platform applications, applying TypeScript with clarity and confidence in real-world projects, for **iOS**, **Android**, and the **Web**, .
 
 ## 📝 License
 
