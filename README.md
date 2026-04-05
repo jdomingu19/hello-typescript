@@ -20,7 +20,8 @@
 >
 > TypeScript compiles down to plain JavaScript, meaning it can run anywhere JavaScript runs, while providing a richer developer experience with features like type inference, autocompletion, and strong IDE support. It has become a popular choice for building scalable web applications and large codebases where clarity and reliability are essential.
 
-**TypeScript Technical Vocabulary**
+<div align="center">
+<strong><p>TypeScript Technical Vocabulary</p></strong>
 
 | Concept                  | Definition                                                      | Example |
 | ------------------------ | --------------------------------------------------------------- | ------- |
@@ -42,6 +43,7 @@
 | **Decorators**           | Experimental annotations for classes and methods.               | [📘](https://www.typescriptlang.org/docs/handbook/decorators.html) |
 | **Ambient Declarations** | Files (`.d.ts`) that describe types of external libraries.      | [📘](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) |
 | **Strict Mode**          | Rules that enforce stronger safety and consistency in code.     | [📘](https://www.typescriptlang.org/tsconfig#strict) |
+</div>
 
 ## 🗂️ Repository Content
 
