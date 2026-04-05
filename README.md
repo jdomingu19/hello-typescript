@@ -8,10 +8,9 @@
 ![Static Badge](https://img.shields.io/badge/css-css3+-1C2024?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)
 ![Static Badge](https://img.shields.io/badge/bash-5.2.37+-1C2024?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=101010)
 
-**Learning TypeScript from Scratch!** This repository is my personal TypeScript learning space where I explore the fundamentals of the language, build a playground for experimentation, and document professional course exercises. It represents a structured journey through TypeScript’s key features, combining practice scripts, reproducible examples, and notes that reinforce clarity and growth.
+**Learning TypeScript from Scratch!** This repository is my personal TypeScript learning space where I explore the fundamentals of the language, build a playground for experimentation, and document professional course exercises.
 
-> This project is a progressive path that consolidates TypeScript essentials like syntax, typing rules, and type inference; applies advanced constructs such as interfaces, generics, and modular design; and extends into growth areas with utility types, type narrowing, and cross‑platform development. It serves as both a sandbox for experimentation and a reference guide. Ultimately, it documents my transition from **JavaScript** into **TypeScript** while preparing for deeper work with **Node.js**, **React**, **React Native**, and **Expo**.
-
+> This project is a progressive path that consolidates TypeScript essentials like syntax, typing rules, and type inference; applies advanced constructs such as interfaces, generics, and modular design; and extends into growth areas with utility types, type narrowing, and cross‑platform development. It serves as both a sandbox for experimentation and a reference guide.
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
