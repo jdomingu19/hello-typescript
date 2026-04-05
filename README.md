@@ -20,28 +20,28 @@
 >
 > TypeScript compiles down to plain JavaScript, meaning it can run anywhere JavaScript runs, while providing a richer developer experience with features like type inference, autocompletion, and strong IDE support. It has become a popular choice for building scalable web applications and large codebases where clarity and reliability are essential.
 
-### TypeScript Technical Vocabulary
+**TypeScript Technical Vocabulary**
 
-| #   | Concept                  | Definition                                                      |
-| --- | ------------------------ | --------------------------------------------------------------- |
-| 1   | **Type Annotations**     | Explicitly specify the type of a variable or parameter.         |
-| 2   | **Type Inference**       | Compiler’s ability to automatically deduce types.               |
-| 3   | **Interfaces**           | Contracts that define the shape of objects and classes.         |
-| 4   | **Type Aliases**         | Custom names for complex or repetitive types.                   |
-| 5   | **Union Types**          | Combine multiple possible types for a single variable.          |
-| 6   | **Intersection Types**   | Merge several types into one.                                   |
-| 7   | **Literal Types**        | Specific values used as types (e.g., `"success"` or `"error"`). |
-| 8   | **Tuples**               | Arrays with fixed length and defined types at each position.    |
-| 9   | **Enums**                | Collections of named constant values.                           |
-| 10  | **Generics**             | Parameterized types that enable flexible and reusable code.     |
-| 11  | **Optional Properties**  | Properties that may or may not exist in an object.              |
-| 12  | **Readonly Properties**  | Properties that cannot be modified after initialization.        |
-| 13  | **Type Narrowing**       | Refine types at runtime through conditional checks.             |
-| 14  | **Type Assertions**      | Force the compiler to treat a value as a specific type.         |
-| 15  | **Modules & Imports**    | Organize code into files and dependencies.                      |
-| 16  | **Decorators**           | Experimental annotations for classes and methods.               |
-| 17  | **Ambient Declarations** | Files (`.d.ts`) that describe types of external libraries.      |
-| 18  | **Strict Mode**          | Rules that enforce stronger safety and consistency in code.     |
+| Concept                  | Definition                                                      | Example |
+| ------------------------ | --------------------------------------------------------------- | ------- |
+| **Type Annotations**     | Explicitly specify the type of a variable or parameter.         | [📘](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-annotations) |
+| **Type Inference**       | Compiler’s ability to automatically deduce types.               | [📘](https://www.typescriptlang.org/docs/handbook/type-inference.html) |
+| **Interfaces**           | Contracts that define the shape of objects and classes.         | [📘](https://www.typescriptlang.org/docs/handbook/interfaces.html) |
+| **Type Aliases**         | Custom names for complex or repetitive types.                   | [📘](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases) |
+| **Union Types**          | Combine multiple possible types for a single variable.          | [📘](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types) |
+| **Intersection Types**   | Merge several types into one.                                   | [📘](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types) |
+| **Literal Types**        | Specific values used as types (e.g., `"success"` or `"error"`). | [📘](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types) |
+| **Tuples**               | Arrays with fixed length and defined types at each position.    | [📘](https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types) |
+| **Enums**                | Collections of named constant values.                           | [📘](https://www.typescriptlang.org/docs/handbook/enums.html) |
+| **Generics**             | Parameterized types that enable flexible and reusable code.     | [📘](https://www.typescriptlang.org/docs/handbook/2/generics.html) |
+| **Optional Properties**  | Properties that may or may not exist in an object.              | [📘](https://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties) |
+| **Readonly Properties**  | Properties that cannot be modified after initialization.        | [📘](https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties) |
+| **Type Narrowing**       | Refine types at runtime through conditional checks.             | [📘](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) |
+| **Type Assertions**      | Force the compiler to treat a value as a specific type.         | [📘](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions) |
+| **Modules & Imports**    | Organize code into files and dependencies.                      | [📘](https://www.typescriptlang.org/docs/handbook/modules.html) |
+| **Decorators**           | Experimental annotations for classes and methods.               | [📘](https://www.typescriptlang.org/docs/handbook/decorators.html) |
+| **Ambient Declarations** | Files (`.d.ts`) that describe types of external libraries.      | [📘](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) |
+| **Strict Mode**          | Rules that enforce stronger safety and consistency in code.     | [📘](https://www.typescriptlang.org/tsconfig#strict) |
 
 ## 🗂️ Repository Content
 
