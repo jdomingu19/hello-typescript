@@ -10,7 +10,7 @@
 
 **Learning TypeScript from Scratch!** This repository is my personal TypeScript learning space where I explore the fundamentals of the language, build a playground for experimentation, and document professional course exercises.
 
-> This project is a progressive path that consolidates TypeScript essentials like syntax, typing rules, and type inference; applies advanced constructs such as interfaces, generics, and modular design; and extends into growth areas with utility types, type narrowing, and cross‑platform development. It serves as both a sandbox for experimentation and a reference guide.
+> This project is a progressive path that consolidates TypeScript essentials like syntax, typing rules, and type inference; applies advanced constructs such as interfaces, generics, and modular design; and extends into growth areas with utility types, type narrowing, and cross‑platform development.
 
 ![header_hello_typescript](https://github.com/user-attachments/assets/6e718616-add5-4b03-98bd-89c2b9aef36f)
 
