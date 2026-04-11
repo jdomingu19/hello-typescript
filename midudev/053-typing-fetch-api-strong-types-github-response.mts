@@ -153,34 +153,36 @@ export enum PullRequestCreationPolicy {
   All = "all",
 }
 
-// 2. Define API endpoint
-const API_URL = "https://api.github.com/search/repositories?q=typescript";
+(async () => {
+  // 2. Define API endpoint
+  const API_URL = "https://api.github.com/search/repositories?q=typescript";
 
-// 3. Perform request with top-level await
-const response = await fetch(API_URL);
+  // 3. Perform request with top-level await
+  const response = await fetch(API_URL);
 
-// 4. Handle error response
-if (!response.ok) {
-  throw new Error("Request failed");
-}
+  // 4. Handle error response
+  if (!response.ok) {
+    throw new Error("Request failed");
+  }
 
-// 5. Parse JSON response with strong typing
-const data = (await response.json()) as GitHubAPIResponse;
+  // 5. Parse JSON response with strong typing
+  const data = (await response.json()) as GitHubAPIResponse;
 
-// 6. Access strongly typed properties
-console.log(data.items);
-console.log(data.total_count);
-console.log(data.incomplete_results);
+  // 6. Access strongly typed properties
+  console.log(data.items);
+  console.log(data.total_count);
+  console.log(data.incomplete_results);
 
-// 7. Map repositories with type safety
-data.items.map((repository) => {
-  return {
-    name: repository.name,
-    stars: repository.stargazers_count,
-    languages: repository.languages_url,
-    url: repository.html_url,
-    // 8. TypeScript prevents access to non-existent properties
-    // Error: Property 'abc' does not exist on type 'Item'.
-    // abc: repository.abc,
-  };
-});
+  // 7. Map repositories with type safety
+  data.items.map((repository) => {
+    return {
+      name: repository.name,
+      stars: repository.stargazers_count,
+      languages: repository.languages_url,
+      url: repository.html_url,
+      // 8. TypeScript prevents access to non-existent properties
+      // Error: Property 'abc' does not exist on type 'Item'.
+      // abc: repository.abc,
+    };
+  });
+})();
