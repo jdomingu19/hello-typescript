@@ -95,7 +95,7 @@
 >
 > **Bridge from JavaScript to TypeScript:** consolidate knowledge in typing, interfaces, and modular design as preparation for deeper work with Node.js, React, React Native, and Expo. This progression ensures TypeScript can be applied effectively in both backend and frontend environments.
 >
-> **Long-Term Vision:** use this repository as a stepping stone toward building cross‑platform applications, applying TypeScript with clarity and confidence in real-world projects, for **iOS**, **Android**, and the **Web**, .
+> **Long-Term Vision:** use this repository as a stepping stone toward building cross‑platform applications, applying TypeScript with clarity and confidence in real-world projects, for **iOS**, **Android**, and the **Web**.
 
 ## ⚖️ License
 
